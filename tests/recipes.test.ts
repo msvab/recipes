@@ -150,6 +150,34 @@ test('scaling preserves source data and qualitative amounts, supports ranges and
   assert.throws(() => scaledQuantity(ingredient.quantity, 0));
   assert.equal(original.cookMinutes, 15);
 });
+test('cup and spoon labels use Czech integer and fractional forms', () => {
+  const ingredient = recipeSchema.parse(sample).ingredients[0].items[0];
+  assert.equal(
+    formatIngredient({
+      ...ingredient,
+      unit: 'cup',
+      quantity: { kind: 'number', value: 5 },
+    }),
+    '5 hrnků',
+  );
+  assert.equal(
+    formatIngredient({
+      ...ingredient,
+      unit: 'cup',
+      quantity: { kind: 'number', value: 0.5 },
+    }),
+    '0,5 hrnku',
+  );
+  assert.equal(
+    formatIngredient({
+      ...ingredient,
+      unit: 'tsp',
+      quantity: { kind: 'number', value: 5 },
+    }),
+    '5 lžiček',
+  );
+});
+
 test('Czech search combines all words, category, and every selected tag', () => {
   const entry = searchEntry(recipeSchema.parse(sample));
   assert.equal(

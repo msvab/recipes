@@ -30,17 +30,19 @@ function unitLabel(unit: Ingredient['unit'], quantity: Quantity) {
         ? quantity.max
         : 0;
   const forms = {
-    cup: ['hrnek', 'hrnky', 'hrnku'],
-    tbsp: ['lžíce', 'lžíce', 'lžíce'],
-    tsp: ['lžička', 'lžičky', 'lžičky'],
+    cup: ['hrnek', 'hrnky', 'hrnků', 'hrnku'],
+    tbsp: ['lžíce', 'lžíce', 'lžic', 'lžíce'],
+    tsp: ['lžička', 'lžičky', 'lžiček', 'lžičky'],
   };
   const options = forms[unit as keyof typeof forms];
   return options[
-    value === 1
-      ? 0
-      : Number.isInteger(value) && value >= 2 && value <= 4
-        ? 1
-        : 2
+    !Number.isInteger(value)
+      ? 3
+      : value === 1
+        ? 0
+        : Number.isInteger(value) && value >= 2 && value <= 4
+          ? 1
+          : 2
   ];
 }
 
