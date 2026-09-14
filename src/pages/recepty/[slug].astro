@@ -1,0 +1,247 @@
+---
+import { getCollection } from 'astro:content';
+import type { Recipe } from '../../lib/recipes/schema';
+import { formatIngredient, formatNumber } from '../../lib/recipes/quantities';
+import { withBase } from '../../lib/urls';
+import Layout from '../../layouts/Layout.astro';
+import RecipeImage from '../../components/RecipeImage.astro';
+export async function getStaticPaths() {
+  return (await getCollection('recipes')).map(({ data }) => ({
+    params: { slug: data.slug },
+    props: { recipe: data },
+  }));
+}
+interface Props {
+  recipe: Recipe;
+}
+const { recipe } = Astro.props;
+---
+
+<Layout title={`${recipe.title} — Recepty`} description={recipe.description}>
+  <article class="recipe-detail shell">
+    <a class="back-link" href={withBase()}>
+      ← Zpět do kuchařky
+    </a>
+    <div class="detail-hero">
+      <div class="detail-heading">
+        <p class="eyebrow">
+          {recipe.category}
+          {recipe.demo && ' · UKÁZKOVÝ RECEPT'}
+        </p>
+        <h1>{recipe.title}</h1>
+        <p class="detail-description">{recipe.description}</p>
+        <div class="detail-tags">
+          {recipe.tags.map((tag) => (
+            <a href={`${withBase()}?tag=${encodeURIComponent(tag)}`}>{tag}</a>
+          ))}
+        </div>
+        <dl class="timings">
+          {recipe.prepMinutes !== undefined && (
+            <div>
+              <dt>Příprava</dt>
+              <dd>
+                {recipe.prepMinutes} <small>min</small>
+              </dd>
+            </div>
+          )}
+          {recipe.cookMinutes !== undefined && (
+            <div>
+              <dt>Vaření / pečení</dt>
+              <dd>
+                {recipe.cookMinutes} <small>min</small>
+              </dd>
+            </div>
+          )}
+          <div>
+            <dt>Základní množství</dt>
+            <dd>
+              {formatNumber(recipe.yield.amount)}{' '}
+              <small>{recipe.yield.label}</small>
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <div class="detail-image palette-0">
+        <RecipeImage image={recipe.image} category={recipe.category} eager />
+      </div>
+    </div>
+    {recipe.demo && (
+      <p class="notice">
+        Ukázkový recept pro předvedení kuchařky. Zatím nebyl ověřen vařením.
+      </p>
+    )}
+    <div class="cooking-layout">
+      <section class="ingredients-panel" aria-labelledby="ingredients-heading">
+        <div class="section-number">01 / PŘIPRAVIT</div>
+        <h2 id="ingredients-heading">Suroviny</h2>
+        <div class="serving-controls" id="serving-controls" hidden>
+          <label for="servings">Množství ({recipe.yield.label})</label>
+          <div class="serving-input">
+            <button type="button" id="less" aria-label="Snížit množství">
+              −
+            </button>
+            <input
+              id="servings"
+              type="number"
+              min="0.25"
+              max="1000"
+              step="any"
+              value={recipe.yield.amount}
+            />
+            <button type="button" id="more" aria-label="Zvýšit množství">
+              +
+            </button>
+          </div>
+          <button type="button" class="clear-button" id="reset-servings">
+            Původní množství
+          </button>
+        </div>
+        <p
+          id="servings-status"
+          class="sr-only"
+          role="status"
+          aria-live="polite"
+        ></p>
+        {recipe.ingredients.map((group) => (
+          <div class="ingredient-group">
+            {group.title && <h3>{group.title}</h3>}
+            <ul>
+              {group.items.map((ingredient) => (
+                <li>
+                  <span class="ingredient-name">
+                    {ingredient.name}
+                    {ingredient.note && <small>{ingredient.note}</small>}
+                  </span>
+                  <span
+                    class="ingredient-amount"
+                    data-ingredient={JSON.stringify(ingredient)}
+                  >
+                    {formatIngredient(ingredient)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+      <section class="steps-panel" aria-labelledby="steps-heading">
+        <div class="section-number">02 / UVAŘIT</div>
+        <h2 id="steps-heading">Postup</h2>
+        <ol>
+          {recipe.steps.map((step, index) => (
+            <li>
+              <span class="step-number" aria-hidden="true">
+                {(index + 1).toString().padStart(2, '0')}
+              </span>
+              <p>{step}</p>
+            </li>
+          ))}
+        </ol>
+        <p class="scaling-note">
+          Množství surovin se přepočítává. Čas a teplota zůstávají stejné;
+          velikost nádoby a průběh vaření přizpůsobte množství.
+        </p>
+      </section>
+    </div>
+    <aside class="source-panel" aria-label="Původ receptu">
+      <h2>O receptu</h2>
+      {recipe.sources.length > 0 ? (
+        <>
+          <p>
+            {recipe.provenance.kind === 'facts'
+              ? 'Vlastní české zpracování kuchařských údajů podle:'
+              : 'Zdroj receptu:'}
+          </p>
+          <ul>
+            {recipe.sources.map((source) => (
+              <li>
+                <a href={source.url} target="_blank" rel="noopener noreferrer">
+                  {source.author} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <p>
+          {recipe.demo
+            ? 'Původní ukázkový obsah této kuchařky.'
+            : 'Z vlastní kuchyně.'}
+        </p>
+      )}
+      {recipe.provenance.kind === 'licensed' && (
+        <p>
+          {recipe.provenance.permission.attribution} ·{' '}
+          {recipe.provenance.permission.basis}{' '}
+          {recipe.provenance.permission.url && (
+            <a href={recipe.provenance.permission.url}>Podmínky použití ↗</a>
+          )}
+        </p>
+      )}
+      {recipe.image.kind === 'licensed' && (
+        <p>
+          Fotografie: {recipe.image.permission.attribution} ·{' '}
+          {recipe.image.permission.basis}{' '}
+          {recipe.image.permission.url && (
+            <a href={recipe.image.permission.url}>Licence / svolení ↗</a>
+          )}
+        </p>
+      )}
+      {recipe.image.kind === 'owner' && <p>Fotografie z vlastní sbírky.</p>}
+      {recipe.image.kind === 'ai' && (
+        <p>
+          Ilustrační obrázek vytvořený AI; nejde o fotografii hotového pokrmu.
+        </p>
+      )}
+    </aside>
+  </article>
+  <div id="yield-data" hidden data-base={recipe.yield.amount}></div>
+</Layout>
+<script>
+  import { formatIngredient, formatNumber } from '../../lib/recipes/quantities';
+  import type { Ingredient } from '../../lib/recipes/schema';
+  const base = Number(
+    document.querySelector<HTMLElement>('#yield-data')!.dataset.base,
+  );
+  const input = document.querySelector<HTMLInputElement>('#servings')!;
+  const amounts = [
+    ...document.querySelectorAll<HTMLElement>('[data-ingredient]'),
+  ].map((element) => ({
+    element,
+    ingredient: JSON.parse(element.dataset.ingredient!) as Ingredient,
+  }));
+  document.querySelector<HTMLElement>('#serving-controls')!.hidden = false;
+  function render() {
+    if (
+      !input.checkValidity() ||
+      !Number.isFinite(input.valueAsNumber) ||
+      input.valueAsNumber <= 0
+    )
+      return;
+    const factor = input.valueAsNumber / base;
+    amounts.forEach(({ element, ingredient }) => {
+      element.textContent = formatIngredient(ingredient, factor);
+    });
+    document.querySelector('#servings-status')!.textContent =
+      `Suroviny přepočítány na množství ${formatNumber(input.valueAsNumber)}.`;
+  }
+  input.addEventListener('input', render);
+  input.addEventListener('change', () => {
+    if (!input.checkValidity() || !input.value) {
+      input.value = String(base);
+      render();
+    }
+  });
+  document.querySelector('#less')!.addEventListener('click', () => {
+    input.value = String(Math.max(0.25, (input.valueAsNumber || base) - 1));
+    render();
+  });
+  document.querySelector('#more')!.addEventListener('click', () => {
+    input.value = String(Math.min(1000, (input.valueAsNumber || base) + 1));
+    render();
+  });
+  document.querySelector('#reset-servings')!.addEventListener('click', () => {
+    input.value = String(base);
+    render();
+  });
+</script>

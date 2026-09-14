@@ -1,0 +1,210 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import { searchEntry } from '../lib/recipes/search';
+const recipes = (await getCollection('recipes'))
+  .map((r) => r.data)
+  .sort((a, b) => a.title.localeCompare(b.title, 'cs'));
+const categories = [...new Set(recipes.map((r) => r.category))].sort((a, b) =>
+  a.localeCompare(b, 'cs'),
+);
+const tags = [...new Set(recipes.flatMap((r) => r.tags))].sort((a, b) =>
+  a.localeCompare(b, 'cs'),
+);
+---
+
+<Layout>
+  <section class="intro shell">
+    <div>
+      <p class="eyebrow">
+        <span></span> SCHOVAT. UVAŘIT. ZNOVU.
+      </p>
+      <h1>
+        Dobré recepty.
+        <br />
+        <em>Vždycky po ruce.</em>
+      </h1>
+      <p class="intro-copy">
+        Malé radosti z domácí kuchyně. Na rychlé večeře,
+        <br class="desktop-break" /> pomalá rána i něco sladkého ke kávě.
+      </p>
+    </div>
+    <div class="intro-note">
+      <span aria-hidden="true">✳</span>
+      <p>
+        To dobré
+        <br />
+        si schováme.
+      </p>
+      <small>VAŠE MÍSTO U STOLU</small>
+    </div>
+  </section>
+  <section class="collection shell" aria-label="Sbírka receptů">
+    <div class="collection-heading">
+      <h2>
+        V kuchařce <span>{recipes.length.toString().padStart(2, '0')}</span>
+      </h2>
+      <p>Inspirace pro dnešní vaření</p>
+    </div>
+    <form id="filters" class="filters" role="search" hidden>
+      <div class="filter-top">
+        <div class="search-field">
+          <svg
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 5 5" />
+          </svg>
+          <label class="sr-only" for="query">
+            Hledat recept nebo surovinu
+          </label>
+          <input
+            id="query"
+            name="q"
+            type="search"
+            placeholder="Na co máte chuť? Recept, surovina…"
+            autocomplete="off"
+          />
+        </div>
+        <label class="category-label" for="category">
+          Kategorie{' '}
+          <select id="category" name="category">
+            <option value="">Všechny kategorie</option>
+            {categories.map((category) => (
+              <option value={category}>{category}</option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <div class="filter-bottom">
+        <fieldset>
+          <legend class="sr-only">
+            Štítky – recept musí obsahovat všechny vybrané
+          </legend>
+          {tags.map((tag) => (
+            <label class="tag-toggle">
+              <input type="checkbox" name="tag" value={tag} />
+              <span>{tag}</span>
+            </label>
+          ))}
+        </fieldset>
+        <button type="reset" class="clear-button">
+          Zrušit filtry ↺
+        </button>
+      </div>
+      <p
+        id="result-count"
+        class="result-count"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </form>
+    <noscript>
+      <p class="notice">
+        Vyhledávání a filtry vyžadují JavaScript. Všechny recepty můžete
+        procházet níže.
+      </p>
+    </noscript>
+    <div class="recipe-grid">
+      {recipes.map((recipe, index) => (
+        <RecipeCard recipe={recipe} index={index} />
+      ))}
+    </div>
+    {recipes.length === 0 && (
+      <div class="empty-state">
+        <h2>První recept už se chystá.</h2>
+        <p>Brzy tu bude něco dobrého.</p>
+      </div>
+    )}
+    <div class="empty-state" id="no-results" hidden>
+      <span aria-hidden="true">⌕</span>
+      <h2>Tady je zatím prázdný talíř.</h2>
+      <p>Zkuste jinou surovinu nebo zrušte některý z filtrů.</p>
+      <button id="empty-reset" class="button">
+        Zobrazit všechny recepty
+      </button>
+    </div>
+    {recipes.some((r) => r.demo) && (
+      <p class="demo-note">
+        Recepty označené jako ukázkové slouží k předvedení kuchařky a zatím
+        nebyly ověřeny vařením.
+      </p>
+    )}
+  </section>
+  <div
+    id="search-data"
+    hidden
+    data-index={JSON.stringify(recipes.map(searchEntry))}
+  ></div>
+</Layout>
+<script>
+  import {
+    filtersFromURL,
+    filtersToURL,
+    matches,
+    type SearchEntry,
+    type Filters,
+  } from '../lib/recipes/search';
+  const form = document.querySelector<HTMLFormElement>('#filters')!;
+  const query = document.querySelector<HTMLInputElement>('#query')!;
+  const category = document.querySelector<HTMLSelectElement>('#category')!;
+  const checkboxes = [
+    ...form.querySelectorAll<HTMLInputElement>('[name="tag"]'),
+  ];
+  const index: SearchEntry[] = JSON.parse(
+    document.querySelector<HTMLElement>('#search-data')!.dataset.index!,
+  );
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-slug]')];
+  const count = document.querySelector('#result-count')!;
+  const empty = document.querySelector<HTMLElement>('#no-results')!;
+  let state = filtersFromURL(new URL(location.href));
+  function render() {
+    query.value = state.query;
+    category.value = state.category;
+    checkboxes.forEach((box) => {
+      box.checked = state.tags.includes(box.value);
+    });
+    const visible = new Set(
+      index.filter((entry) => matches(entry, state)).map((entry) => entry.slug),
+    );
+    cards.forEach((card) => {
+      card.hidden = !visible.has(card.dataset.slug!);
+    });
+    count.textContent = `Zobrazeno ${visible.size} z ${index.length} receptů${state.category ? ` · ${state.category}` : ''}${state.tags.length ? ` · ${state.tags.join(', ')}` : ''}`;
+    empty.hidden = visible.size !== 0 || index.length === 0;
+  }
+  function update(next: Filters) {
+    state = next;
+    history.pushState(null, '', filtersToURL(new URL(location.href), state));
+    render();
+  }
+  form.hidden = false;
+  render();
+  form.addEventListener('submit', (event) => event.preventDefault());
+  form.addEventListener('input', () =>
+    update({
+      query: query.value,
+      category: category.value,
+      tags: checkboxes.filter((box) => box.checked).map((box) => box.value),
+    }),
+  );
+  form.addEventListener('reset', (event) => {
+    event.preventDefault();
+    update({ query: '', category: '', tags: [] });
+  });
+  document.querySelector('#empty-reset')!.addEventListener('click', () => {
+    form.reset();
+    query.focus();
+  });
+  window.addEventListener('popstate', () => {
+    state = filtersFromURL(new URL(location.href));
+    render();
+  });
+</script>

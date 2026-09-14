@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { withBase } from '../lib/urls';
+---
+
+<Layout title="Recept se nenašel — Recepty">
+  <section class="empty-state shell">
+    <p class="eyebrow">404 / ZTRACENO V KUCHYNI</p>
+    <h1>Tenhle recept tu není.</h1>
+    <p>Možná se změnil odkaz nebo byl recept odstraněn.</p>
+    <a class="button" href={withBase()}>
+      Zpět do kuchařky
+    </a>
+  </section>
+</Layout>

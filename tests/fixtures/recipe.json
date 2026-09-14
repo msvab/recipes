@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "slug": "citronove-testoviny",
+  "title": "Citronové těstoviny s hráškem",
+  "description": "Svěží, krémové a hotové za chvíli. Večeře, která si vystačí s pár surovinami.",
+  "demo": true,
+  "yield": { "amount": 2, "label": "porce" },
+  "prepMinutes": 10,
+  "cookMinutes": 15,
+  "category": "Hlavní jídla",
+  "tags": ["Do 30 minut", "Vegetariánské"],
+  "ingredients": [
+    {
+      "items": [
+        {
+          "id": "testoviny",
+          "name": "těstoviny",
+          "quantity": { "kind": "number", "value": 200 },
+          "unit": "g"
+        },
+        {
+          "id": "hrasek",
+          "name": "mražený hrášek",
+          "quantity": { "kind": "number", "value": 120 },
+          "unit": "g"
+        },
+        {
+          "id": "maslo",
+          "name": "máslo",
+          "quantity": { "kind": "number", "value": 25 },
+          "unit": "g"
+        },
+        {
+          "id": "citron",
+          "name": "citron",
+          "quantity": { "kind": "number", "value": 0.5 },
+          "unit": "ks",
+          "note": "šťáva a jemně nastrouhaná kůra"
+        },
+        {
+          "id": "syr",
+          "name": "tvrdý sýr",
+          "quantity": { "kind": "number", "value": 40 },
+          "unit": "g",
+          "note": "jemně nastrouhaný"
+        },
+        {
+          "id": "sul",
+          "name": "sůl a pepř",
+          "quantity": { "kind": "text", "text": "podle chuti" }
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Těstoviny dejte vařit do osolené vody podle pokynů na obalu. Před slitím si odložte trochu vody z vaření.",
+    "V široké pánvi rozehřejte máslo. Přisypte hrášek, přilijte trochu vody z těstovin a několik minut prohřívejte, až hrášek změkne.",
+    "Do pánve přidejte těstoviny, citronovou kůru a trochu citronové šťávy. Promíchejte a odstavte.",
+    "Vmíchejte sýr a po troškách přidávejte vodu z vaření, až vznikne jemná omáčka. Ochutnejte, dochuťte a ihned podávejte."
+  ],
+  "sources": [],
+  "provenance": { "kind": "own" },
+  "image": { "kind": "placeholder" }
+}

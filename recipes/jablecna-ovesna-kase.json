@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "slug": "jablecna-ovesna-kase",
+  "title": "Jablečná ovesná kaše",
+  "description": "Pomalé ráno v jedné misce. Teplá jablka, skořice a trocha křupavých ořechů.",
+  "demo": true,
+  "yield": { "amount": 2, "label": "porce" },
+  "prepMinutes": 5,
+  "cookMinutes": 10,
+  "category": "Snídaně",
+  "tags": ["Do 30 minut", "Sladké", "Vegetariánské"],
+  "ingredients": [{ "items": [
+    { "id": "vlocky", "name": "ovesné vločky", "quantity": { "kind": "number", "value": 100 }, "unit": "g" },
+    { "id": "mleko", "name": "mléko", "quantity": { "kind": "number", "value": 400 }, "unit": "ml" },
+    { "id": "jablko", "name": "jablko", "quantity": { "kind": "number", "value": 1 }, "unit": "ks" },
+    { "id": "skorice", "name": "mletá skořice", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" },
+    { "id": "orechy", "name": "vlašské ořechy", "quantity": { "kind": "number", "value": 20 }, "unit": "g" },
+    { "id": "med", "name": "med", "quantity": { "kind": "text", "text": "podle chuti" } }
+  ] }],
+  "steps": [
+    "Jablko omyjte, zbavte jádřince a nahrubo nastrouhejte. Ořechy nasekejte.",
+    "V rendlíku smíchejte vločky, mléko, jablko a skořici. Přiveďte k mírnému varu.",
+    "Za častého míchání vařte přibližně 8 až 10 minut, dokud vločky nezměknou. Pokud kaše příliš zhoustne, přidejte trochu mléka.",
+    "Rozdělte do misek, posypte ořechy a podle chuti oslaďte medem."
+  ],
+  "sources": [],
+  "provenance": { "kind": "own" },
+  "image": { "kind": "placeholder" }
+}
