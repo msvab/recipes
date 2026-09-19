@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "slug": "cockovo-dynova-polevka-s-ras-el-hanout",
+  "title": "Čočkovo-dýňová polévka s ras el hanout",
+  "description": "Krémová polévka z máslové dýně a červené čočky, dochucená kořením ras el hanout.",
+  "demo": false,
+  "yield": { "amount": 6, "label": "porce" },
+  "prepMinutes": 10,
+  "cookMinutes": 40,
+  "category": "Polévky",
+  "tags": ["Vegetariánské", "Luštěniny", "Bez lepku", "Do mrazáku"],
+  "ingredients": [
+    {
+      "items": [
+        { "id": "olivovy-olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 30 }, "unit": "ml", "approximate": true },
+        { "id": "cibule", "name": "cibule", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "najemno" },
+        { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "prolisované" },
+        { "id": "chilli-prasek", "name": "pálivý chilli prášek", "quantity": { "kind": "number", "value": 0.25 }, "unit": "tsp" },
+        { "id": "ras-el-hanout", "name": "ras el hanout", "quantity": { "kind": "number", "value": 1 }, "unit": "tbsp" },
+        { "id": "maslova-dyne", "name": "máslová dýně", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "oloupaná, na kostky asi 2 cm" },
+        { "id": "cervena-cocka", "name": "červená čočka", "quantity": { "kind": "number", "value": 100 }, "unit": "g" },
+        { "id": "vyvar", "name": "horký zeleninový vývar", "quantity": { "kind": "number", "value": 1 }, "unit": "l" },
+        { "id": "koriandr", "name": "čerstvý koriandr", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "malý svazek, nasekané listy; trochu ponechte na podávání" },
+        { "id": "dukkah", "name": "dukkah", "quantity": { "kind": "text", "text": "na podávání" } },
+        { "id": "jogurt", "name": "bílý jogurt", "quantity": { "kind": "text", "text": "na podávání" } },
+        { "id": "dochuceni", "name": "sůl a pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
+      ]
+    }
+  ],
+  "steps": [
+    "V hrnci rozehřejte olej a s trochou soli na něm asi 7 minut opékejte cibuli do změknutí a lehkého zezlátnutí.",
+    "Přidejte česnek, chilli a ras el hanout a za stálého míchání opékejte ještě minutu.",
+    "Vmíchejte dýni a čočku, zalijte vývarem a dochuťte. Přiveďte k varu, přiklopte a zvolna vařte asi 25 minut do změknutí dýně.",
+    "Polévku rozmixujte tyčovým mixérem dohladka a znovu dochuťte.",
+    "Vmíchejte nasekaný koriandr a podávejte s dukkah, jogurtem a zbývajícím koriandrem."
+  ],
+  "sources": [{ "url": "https://www.bbcgoodfood.com/recipes/spiced-lentil-butternut-squash-soup", "author": "Esther Clark · BBC Good Food", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "slug": "fazolovy-gulas-s-bylinkami",
+  "title": "Fazolový guláš s bylinkami a volitelnou klobásou",
+  "description": "Hustý fazolový guláš s bramborami, šalvějí, rozmarýnem a petrželkou.",
+  "demo": false,
+  "yield": { "amount": 5, "label": "porce" },
+  "prepMinutes": 20,
+  "cookMinutes": 105,
+  "category": "Hlavní jídla",
+  "tags": ["Luštěniny", "Vegetariánské", "Bez lepku"],
+  "ingredients": [
+    {
+      "items": [
+        { "id": "fazolova-smes", "name": "směs sušených fazolí", "quantity": { "kind": "number", "value": 500 }, "unit": "g", "note": "namočená 12 hodin a slitá" },
+        { "id": "olivovy-olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 75 }, "unit": "ml", "approximate": true },
+        { "id": "cibule", "name": "velká cibule", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "na kostičky" },
+        { "id": "rapikaty-celer", "name": "řapíkatý celer", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "na kostičky" },
+        { "id": "cesnek", "name": "stroužek česneku", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "oloupaný, vcelku" },
+        { "id": "klobasa", "name": "klobásy", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "volitelně, bez střívka a rozdroběné" },
+        { "id": "rajcata", "name": "čerstvá rajčata", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "nahrubo nakrájená; lze nahradit 4 konzervovanými loupanými rajčaty" },
+        { "id": "salvej", "name": "čerstvá šalvěj", "quantity": { "kind": "text", "text": "malá hrst" } },
+        { "id": "rozmaryn", "name": "rozmarýn", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "snítka" },
+        { "id": "brambory", "name": "brambory", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "oloupané, na kostky asi 2 × 3 cm" },
+        { "id": "petrzelka", "name": "čerstvá petrželka", "quantity": { "kind": "text", "text": "malá hrst" }, "note": "nasekaná" },
+        { "id": "chilli", "name": "červené chilli", "quantity": { "kind": "text", "text": "podle chuti" }, "note": "volitelně, nasekané" },
+        { "id": "sul", "name": "sůl", "quantity": { "kind": "text", "text": "podle chuti" } }
+      ]
+    }
+  ],
+  "steps": [
+    "Namočené fazole zalijte čerstvou vodou, 15 minut povařte, potom slijte a propláchněte.",
+    "V těžkém hrnci na mírném plameni změkněte na oleji cibuli, celer, česnek a špetku soli. Pokud používáte klobásu, přidejte ji a opékejte, až nezůstane růžová.",
+    "Vmíchejte rajčata, šalvěj, rozmarýn, brambory a fazole. Zalijte horkou vodou tak, aby byly suroviny ponořené, a přiveďte k varu.",
+    "Zvolna vařte pod pokličkou asi 90 minut, dokud nezměknou fazole i brambory. Podle potřeby dolijte horkou vodu, aby pokrm zůstal hustý, ale lžícový.",
+    "Vmíchejte petrželku, dochuťte solí a při podávání přidejte trochu oleje a případně chilli."
+  ],
+  "sources": [{ "url": "https://www.theguardian.com/food/2024/oct/07/bean-stew-with-lots-of-herbs-recipe-rachel-roddy", "author": "Rachel Roddy · The Guardian", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "slug": "polevka-z-bilych-fazoli-se-spenatem",
+  "title": "Polévka z bílých fazolí se špenátem a bylinkami",
+  "description": "Sytá veganská polévka z cannellini fazolí, zeleniny, špenátu, kopru a petrželky.",
+  "demo": false,
+  "yield": { "amount": 4, "label": "porce" },
+  "prepMinutes": 10,
+  "cookMinutes": 35,
+  "category": "Polévky",
+  "tags": ["Veganské", "Luštěniny", "Bez lepku"],
+  "ingredients": [
+    {
+      "items": [
+        { "id": "petrzelka", "name": "petrželka", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "svazek; stonky a listy zvlášť nasekané" },
+        { "id": "olivovy-olej", "name": "extra panenský olivový olej", "quantity": { "kind": "number", "value": 45 }, "unit": "ml", "approximate": true },
+        { "id": "cibule", "name": "střední cibule", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "najemno" },
+        { "id": "cesnek", "name": "velké stroužky česneku", "quantity": { "kind": "number", "value": 3 }, "unit": "ks", "note": "najemno" },
+        { "id": "rajcatovy-protlak", "name": "rajčatový protlak", "quantity": { "kind": "number", "value": 30 }, "unit": "ml", "approximate": true },
+        { "id": "mrkev", "name": "velké mrkve", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "nakrájené" },
+        { "id": "rapikaty-celer", "name": "řapíkatý celer", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "nakrájený" },
+        { "id": "italske-bylinky", "name": "italské bylinky", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+        { "id": "sladka-paprika", "name": "sladká paprika", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+        { "id": "chilli-vlocky", "name": "chilli vločky", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" },
+        { "id": "vyvar", "name": "zeleninový vývar", "quantity": { "kind": "number", "value": 950 }, "unit": "ml", "approximate": true },
+        { "id": "cannellini", "name": "konzervované fazole cannellini", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "konzervy po 400 g, slité a propláchnuté" },
+        { "id": "spenat", "name": "čerstvý špenát", "quantity": { "kind": "number", "value": 60 }, "unit": "g", "approximate": true },
+        { "id": "kopr", "name": "čerstvý kopr", "quantity": { "kind": "number", "value": 15 }, "unit": "g", "note": "nasekaný", "approximate": true },
+        { "id": "ocet", "name": "bílý vinný ocet", "quantity": { "kind": "number", "value": 30 }, "unit": "ml", "approximate": true },
+        { "id": "dochuceni", "name": "sůl a černý pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
+      ]
+    }
+  ],
+  "steps": [
+    "Stonky petrželky oddělte od listů a oboje nasekejte zvlášť.",
+    "V hrnci rozehřejte olej. Přidejte cibuli a česnek a za častého míchání je 3–5 minut opékejte.",
+    "Vmíchejte protlak, mrkev, celer a petrželkové stonky. Okořeňte bylinkami, paprikou, chilli, solí a pepřem a asi 5 minut restujte.",
+    "Přilijte vývar, přidejte fazole a přiveďte k varu. Pět minut povařte, potom přiklopte jen částečně a zvolna vařte dalších asi 20 minut do změknutí zeleniny.",
+    "Pro krémovější konzistenci rozmixujte tyčovým mixérem přibližně polovinu polévky. Vmíchejte špenát, přiklopte na 1–2 minuty, pak přidejte petrželkové listy, kopr a ocet."
+  ],
+  "sources": [{ "url": "https://www.themediterraneandish.com/white-bean-soup/", "author": "Suzy Karadsheh · The Mediterranean Dish", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

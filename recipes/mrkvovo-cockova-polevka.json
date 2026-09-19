@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "slug": "mrkvovo-cockova-polevka",
+  "title": "Mrkvovo-čočková polévka s kořením",
+  "description": "Hladký veganský krém z mrkve a červené čočky se zemitým kořením.",
+  "demo": false,
+  "yield": { "amount": 6, "label": "porce" },
+  "prepMinutes": 8,
+  "cookMinutes": 22,
+  "category": "Polévky",
+  "tags": ["Veganské", "Luštěniny", "Bez lepku", "Do 30 minut"],
+  "ingredients": [
+    {
+      "items": [
+        { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "number", "value": 4 }, "unit": "ks", "note": "najemno" },
+        { "id": "cibule", "name": "žlutá cibule", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "najemno" },
+        { "id": "olivovy-olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 15 }, "unit": "ml", "approximate": true },
+        { "id": "mrkev", "name": "mrkev", "quantity": { "kind": "number", "value": 400 }, "unit": "g", "note": "na kostky", "approximate": true },
+        { "id": "kurkuma", "name": "kurkuma", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" },
+        { "id": "chilli-prasek", "name": "chilli prášek", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" },
+        { "id": "paprika", "name": "sladká paprika", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" },
+        { "id": "rimsky-kmin", "name": "mletý římský kmín", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+        { "id": "sul", "name": "sůl", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+        { "id": "cervena-cocka", "name": "červená čočka", "quantity": { "kind": "number", "value": 300 }, "unit": "g", "approximate": true },
+        { "id": "vyvar", "name": "zeleninový vývar", "quantity": { "kind": "number", "value": 950 }, "unit": "ml", "approximate": true },
+        { "id": "mandlove-mleko", "name": "neslazené mandlové mléko", "quantity": { "kind": "number", "value": 475 }, "unit": "ml", "note": "nebo jiné mléko", "approximate": true },
+        { "id": "ozdoba", "name": "petrželka, dýňová semínka nebo jogurt", "quantity": { "kind": "text", "text": "na podávání" } }
+      ]
+    }
+  ],
+  "steps": [
+    "V hrnci na oleji při středně vysoké teplotě 3 minuty restujte česnek a cibuli.",
+    "Přidejte mrkev, kurkumu, chilli, papriku, římský kmín a sůl. Restujte další 4 minuty.",
+    "Přisypte čočku, přilijte vývar a mléko. Zvolna vařte asi 15 minut, dokud mrkev nezměkne.",
+    "Odstavte a rozmixujte tyčovým mixérem dohladka. Je-li polévka příliš hustá, přidejte vývar.",
+    "Podávejte teplou, případně s petrželkou, semínky nebo lžící jogurtu."
+  ],
+  "sources": [{ "url": "https://www.everylastbite.com/carrot-lentil-soup/", "author": "Carmen Sturdy · Every Last Bite", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

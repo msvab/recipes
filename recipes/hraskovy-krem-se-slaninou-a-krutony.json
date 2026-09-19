@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "slug": "hraskovy-krem-se-slaninou-a-krutony",
+  "title": "Hráškový krém se slaninou a krutony",
+  "description": "Jemná hrášková polévka zjemněná smetanou, podávaná s opečenou slaninou a krutony.",
+  "demo": false,
+  "yield": { "amount": 4, "label": "porce" },
+  "prepMinutes": 10,
+  "cookMinutes": 30,
+  "category": "Polévky",
+  "tags": ["Do 45 minut", "Hrášek"],
+  "ingredients": [
+    {
+      "items": [
+        { "id": "hrasek", "name": "hrásek", "quantity": { "kind": "number", "value": 300 }, "unit": "g", "note": "čerstvý nebo mražený; 4 lžíce odložte stranou" },
+        { "id": "brambory", "name": "střední brambory", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "oloupané, na kostky" },
+        { "id": "slanina", "name": "slanina", "quantity": { "kind": "number", "value": 150 }, "unit": "g", "note": "50 g do základu, zbytek na podávání" },
+        { "id": "vyvar", "name": "vývar", "quantity": { "kind": "number", "value": 1 }, "unit": "l" },
+        { "id": "cibule", "name": "cibule", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "nasekaná" },
+        { "id": "tuk", "name": "olej nebo sádlo", "quantity": { "kind": "text", "text": "trocha" } },
+        { "id": "smetana", "name": "smetana ke šlehání", "quantity": { "kind": "number", "value": 150 }, "unit": "ml" },
+        { "id": "toastovy-chleb", "name": "plátky toustového chleba", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "na krutony" },
+        { "id": "cesnek", "name": "stroužek česneku", "quantity": { "kind": "number", "value": 1 }, "unit": "ks" },
+        { "id": "dochuceni", "name": "sůl a mletý pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
+      ]
+    }
+  ],
+  "steps": [
+    "Je-li hrášek mražený, nechte jej povolit a dobře okapat. Na troše tuku orestujte cibuli s 50 g slaniny.",
+    "Přidejte hrášek kromě odložených 4 lžic a brambory. Krátce orestujte, zalijte vývarem, přidejte česnek, pepř a sůl a vařte do měkka.",
+    "Hrnec stáhněte z ohně a polévku rozmixujte dohladka. Přilijte smetanu a krátce znovu prohřejte až k varu.",
+    "Zbývající slaninu opečte na pánvi. Přidejte kostky toustového chleba a opékejte dozlatova.",
+    "Polévku ochutnejte a podávejte s odloženým hráškem, slaninou a krutony."
+  ],
+  "sources": [{ "url": "https://www.toprecepty.cz/recept/11012-hraskova-polevka-podle-pohlreicha/", "author": "markeva · Toprecepty.cz", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}
