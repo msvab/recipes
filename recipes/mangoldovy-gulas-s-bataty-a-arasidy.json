@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "slug": "mangoldovy-gulas-s-bataty-a-arasidy",
+  "title": "Mangoldový guláš s batáty a arašídy",
+  "description": "Veganský guláš z batátů, rajčat, mangoldu a mletých arašídů.",
+  "demo": false,
+  "yield": { "amount": 4, "label": "porce" },
+  "prepMinutes": 15,
+  "cookMinutes": 45,
+  "category": "Hlavní jídla",
+  "tags": ["Veganské", "Bez lepku", "Luštěniny a zelenina"],
+  "ingredients": [{ "items": [
+    { "id": "slunecnicovy-olej", "name": "slunečnicový olej", "quantity": { "kind": "number", "value": 2 }, "unit": "tbsp" },
+    { "id": "cibule", "name": "velká cibule", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "nasekaná" },
+    { "id": "rimski-kmin", "name": "semínka římského kmínu", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+    { "id": "bataty", "name": "batáty", "quantity": { "kind": "number", "value": 400 }, "unit": "g", "note": "na střední kostky" },
+    { "id": "chilli", "name": "chilli vločky", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" },
+    { "id": "rajcata", "name": "krájená rajčata v konzervě", "quantity": { "kind": "number", "value": 400 }, "unit": "g" },
+    { "id": "voda", "name": "voda", "quantity": { "kind": "number", "value": 750 }, "unit": "ml" },
+    { "id": "arasidy", "name": "solené pražené arašídy", "quantity": { "kind": "number", "value": 140 }, "unit": "g" },
+    { "id": "mangold", "name": "mangold", "quantity": { "kind": "number", "value": 250 }, "unit": "g", "note": "listy i stonky, nahrubo nakrájené" },
+    { "id": "sul", "name": "sůl", "quantity": { "kind": "text", "text": "podle chuti" } },
+    { "id": "pepr", "name": "čerstvě mletý černý pepř", "quantity": { "kind": "text", "text": "k podávání" } }
+  ] }],
+  "steps": [
+    "V hrnci rozehřejte olej a orestujte cibuli dozlatova. Přidejte římský kmín a asi minutu jej rozvonějte.",
+    "Přidejte batáty, chilli, rajčata a vodu. Přiklopte, přiveďte k varu, pak odkryjte a 15 minut zvolna vařte.",
+    "Arašídy rozmixujte najemno, ale nenechte z nich vzniknout máslo. Vmíchejte je do guláše, dochuťte a dalších 15 minut vařte za častého míchání.",
+    "Vmíchejte mangold, znovu přiveďte k varu a pod pokličkou vařte 8–10 minut do změknutí. Podávejte s černým pepřem."
+  ],
+  "sources": [{ "url": "https://www.bbcgoodfood.com/recipes/chard-sweet-potato-peanut-stew", "author": "Celia Brooks Brown · BBC Good Food", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

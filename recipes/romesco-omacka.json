@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "slug": "romesco-omacka",
+  "title": "Romesco omáčka",
+  "description": "Španělská omáčka z pečených paprik, rajčat, mandlí a lískových oříšků.",
+  "demo": false,
+  "yield": { "amount": 10, "label": "porce" },
+  "prepMinutes": 5,
+  "category": "Omáčky a dipy",
+  "tags": ["Španělská kuchyně", "Vegetariánské", "Bez lepku"],
+  "ingredients": [{ "items": [
+    { "id": "pecene-papriky", "name": "pečené červené papriky ze sklenice", "quantity": { "kind": "number", "value": 340 }, "unit": "g", "note": "scezené", "approximate": true },
+    { "id": "pecena-rajcata", "name": "ohněm pečená rajčata v konzervě", "quantity": { "kind": "number", "value": 400 }, "unit": "g", "note": "dobře scezená", "approximate": true },
+    { "id": "mandle", "name": "blanšírované mandle", "quantity": { "kind": "number", "value": 105 }, "unit": "g", "note": "opražené", "approximate": true },
+    { "id": "liskove-orechy", "name": "blanšírované lískové oříšky", "quantity": { "kind": "number", "value": 35 }, "unit": "g", "note": "opražené, volitelné", "approximate": true },
+    { "id": "petrzel", "name": "čerstvá hladkolistá petržel", "quantity": { "kind": "number", "value": 15 }, "unit": "g", "note": "nasekaná", "approximate": true },
+    { "id": "olej", "name": "extra panenský olivový olej", "quantity": { "kind": "number", "value": 60 }, "unit": "ml" },
+    { "id": "sul", "name": "sůl", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+    { "id": "uzena-paprika", "name": "uzená sladká paprika", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+    { "id": "chilli", "name": "chilli vločky", "quantity": { "kind": "range", "min": 0.5, "max": 1 }, "unit": "tsp" },
+    { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "range", "min": 1, "max": 2 }, "unit": "ks" },
+    { "id": "citron", "name": "citronová šťáva", "quantity": { "kind": "number", "value": 0.5 }, "unit": "ks", "note": "z citronu" },
+    { "id": "ocet", "name": "sherry nebo vinný ocet", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+    { "id": "pepr", "name": "černý pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
+  ] }],
+  "steps": [
+    "Všechny suroviny dejte do mixéru nebo kuchyňského robotu.",
+    "Mixujte po krátkých pulzech do požadované struktury: méně pro hustý dip, déle pro hladší omáčku.",
+    "Ochutnejte a upravte sůl, pepř, citronovou šťávu nebo chilli."
+  ],
+  "sources": [{ "url": "https://www.themediterraneandish.com/romesco-sauce-recipe/", "author": "Suzy Karadsheh · The Mediterranean Dish", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}
