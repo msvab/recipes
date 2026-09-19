@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "slug": "kanci-ragu",
+  "title": "Kančí ragú s kořenovou zeleninou",
+  "description": "Pomalu dušené kančí maso se slaninou, kořenovou zeleninou, jalovcem a červeným vínem.",
+  "demo": false,
+  "yield": { "amount": 4, "label": "porce" },
+  "cookMinutes": 180,
+  "category": "Hlavní jídla",
+  "tags": ["Zvěřina", "Česká kuchyně", "Bez lepku"],
+  "ingredients": [
+    {
+      "items": [
+        { "id": "kanci-plec", "name": "kančí plec", "quantity": { "kind": "number", "value": 750 }, "unit": "g", "note": "na větší kostky" },
+        { "id": "cibule", "name": "střední cibule", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "na kostičky" },
+        { "id": "slanina", "name": "slanina", "quantity": { "kind": "number", "value": 80 }, "unit": "g", "note": "na kostičky" },
+        { "id": "mrkev", "name": "mrkve", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "na kostičky" },
+        { "id": "celer", "name": "celerová bulva", "quantity": { "kind": "number", "value": 0.25 }, "unit": "ks", "note": "středně velká, na kostičky" },
+        { "id": "petrzel", "name": "kořenová petržel", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "na kostičky" },
+        { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "najemno" },
+        { "id": "bobkovy-list", "name": "bobkové listy", "quantity": { "kind": "number", "value": 2 }, "unit": "ks" },
+        { "id": "jalovec", "name": "kuličky jalovce", "quantity": { "kind": "number", "value": 6 }, "unit": "ks", "note": "lehce podrcené" },
+        { "id": "nove-koreni", "name": "kuličky nového koření", "quantity": { "kind": "number", "value": 3 }, "unit": "ks" },
+        { "id": "tymian", "name": "čerstvý tymián", "quantity": { "kind": "number", "value": 3 }, "unit": "ks", "note": "snítky" },
+        { "id": "rozmaryn", "name": "čerstvý rozmarýn", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "snítky" },
+        { "id": "salvej", "name": "čerstvá šalvěj", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "snítky" },
+        { "id": "rajcatovy-protlak", "name": "rajčatový protlak", "quantity": { "kind": "number", "value": 1 }, "unit": "tbsp" },
+        { "id": "dijonska-horcice", "name": "dijonská hořčice", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+        { "id": "cervene-vino", "name": "červené víno", "quantity": { "kind": "number", "value": 100 }, "unit": "ml" },
+        { "id": "citronova-kura", "name": "jemně nastrouhaná citronová kůra", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "z citronu" },
+        { "id": "zeleninovy-vyvar", "name": "zeleninový vývar", "quantity": { "kind": "text", "text": "podle potřeby" }, "note": "na podlévání" },
+        { "id": "dochuceni", "name": "sůl a pepř", "quantity": { "kind": "text", "text": "podle chuti" } },
+        { "id": "sadlo", "name": "sádlo", "quantity": { "kind": "text", "text": "na opečení" } }
+      ]
+    }
+  ],
+  "steps": [
+    "Maso osolte, opepřete a na rozpáleném sádle je ze všech stran opečte dozlatova. Vyjměte je stranou.",
+    "Do stejného hrnce dejte cibuli, slaninu, mrkev, celer a petržel. Za občasného míchání restujte, až zelenina i slanina získají zlatavou barvu.",
+    "Přidejte protlak a hořčici, krátce je orestujte. Vmíchejte česnek, bobkový list, jalovec, nové koření a bylinky.",
+    "Vraťte maso, zalijte vínem a nechte je zcela odpařit. Podlijte vývarem, přiklopte a zvolna duste do úplného změknutí masa; podle potřeby přilévejte vývar.",
+    "Dochuťte solí a pepřem a před podáváním vmíchejte citronovou kůru."
+  ],
+  "sources": [{ "url": "https://kitchenstory.cz/kanci-ragu/", "author": "Kitchen Story", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

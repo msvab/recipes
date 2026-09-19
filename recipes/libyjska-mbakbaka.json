@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "libyjska-mbakbaka",
+  "title": "Libyjská mbakbaka s hovězím a těstovinami",
+  "description": "Jednohrncové libyjské těstoviny s hovězím, rajčatovým základem a směsí koření bzaar.",
+  "demo": false,
+  "yield": { "amount": 5, "label": "porce" },
+  "category": "Hlavní jídla",
+  "tags": ["Hovězí maso", "Těstoviny", "Z jednoho hrnce", "Libyjská kuchyně"],
+  "ingredients": [
+    {
+      "title": "Směs bzaar (vystačí na 3 lžičky)",
+      "items": [
+        { "id": "kurkuma", "name": "kurkuma", "quantity": { "kind": "number", "value": 1.25 }, "unit": "tsp" },
+        { "id": "kminek", "name": "římský kmín", "quantity": { "kind": "number", "value": 0.75 }, "unit": "tsp", "note": "podrcený v hmoždíři" },
+        { "id": "koriandr", "name": "mletý koriandr", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" },
+        { "id": "cerny-pepr", "name": "mletý černý pepř", "quantity": { "kind": "number", "value": 0.25 }, "unit": "tsp" },
+        { "id": "mlety-rimsky-kmin", "name": "mletý římský kmín", "quantity": { "kind": "number", "value": 0.25 }, "unit": "tsp" },
+        { "id": "zazvor", "name": "mletý zázvor", "quantity": { "kind": "number", "value": 0.125 }, "unit": "tsp" },
+        { "id": "hrebicek", "name": "mletý hřebíček", "quantity": { "kind": "number", "value": 0.125 }, "unit": "tsp" },
+        { "id": "koriandr-do-7-koreni", "name": "mletý koriandr", "quantity": { "kind": "number", "value": 0.125 }, "unit": "tsp" },
+        { "id": "kardamom", "name": "mletý kardamom", "quantity": { "kind": "number", "value": 0.0625 }, "unit": "tsp" },
+        { "id": "muskatovy-orech", "name": "mletý muškátový ořech", "quantity": { "kind": "number", "value": 0.0625 }, "unit": "tsp" }
+      ]
+    },
+    {
+      "title": "Mbakbaka",
+      "items": [
+        { "id": "hovezi", "name": "hovězí maso", "quantity": { "kind": "number", "value": 1 }, "unit": "kg", "note": "na větší kostky" },
+        { "id": "kratke-testoviny", "name": "krátké těstoviny", "quantity": { "kind": "number", "value": 500 }, "unit": "g", "note": "kolínka nebo krátké trubky" },
+        { "id": "cibule", "name": "střední cibule", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "na střední kostky" },
+        { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "range", "min": 2, "max": 3 }, "unit": "ks", "note": "najemno" },
+        { "id": "zelene-chilli", "name": "zelené chilli papričky", "quantity": { "kind": "range", "min": 2, "max": 3 }, "unit": "ks", "note": "volitelně, nakrájené" },
+        { "id": "rostlinny-olej", "name": "rostlinný olej", "quantity": { "kind": "number", "value": 60 }, "unit": "ml", "approximate": true },
+        { "id": "rajcatovy-protlak", "name": "rajčatový protlak", "quantity": { "kind": "number", "value": 60 }, "unit": "ml", "approximate": true },
+        { "id": "sul", "name": "sůl", "quantity": { "kind": "number", "value": 2.5 }, "unit": "tsp" },
+        { "id": "bzaar", "name": "směs bzaar", "quantity": { "kind": "number", "value": 2 }, "unit": "tsp", "note": "připravená výše" },
+        { "id": "paliava-paprika", "name": "pálivá paprika", "quantity": { "kind": "number", "value": 1.5 }, "unit": "tsp", "note": "nebo 1 lžička sladké papriky a 1/2 lžičky kajenského pepře" },
+        { "id": "hovezi-vyvar", "name": "hovězí nebo jehněčí vývar", "quantity": { "kind": "number", "value": 500 }, "unit": "ml" },
+        { "id": "voda", "name": "horká voda nebo vývar", "quantity": { "kind": "text", "text": "podle potřeby" }, "note": "na zakrytí masa a později těstovin" }
+      ]
+    }
+  ],
+  "steps": [
+    "Na směs bzaar promíchejte všechno koření; vznikne přibližně 3 lžičky směsi. Použijte 2 lžičky, zbytek uchovejte na příště.",
+    "Ve velkém hrnci rozehřejte olej na vysokém plameni. Po částech opečte maso z obou stran vždy 3–4 minuty a odkládejte stranou.",
+    "Plamen stáhněte na střední, přidejte cibuli a po 2 minutách česnek. Restujte 5–7 minut, až cibule změkne a uvolní se přípečky ze dna.",
+    "Vraťte do hrnce maso se šťávou, přidejte případnou zeleninu, protlak, sůl, pálivou papriku a 2 lžičky bzaaru. Zalijte tolik vývarem nebo vodou, aby maso zakryl, přiveďte k varu a pod pokličkou zvolna vařte asi 45 minut do změknutí.",
+    "Vsypte těstoviny, dolijte horkou vodu nebo vývar jen tak, aby byly těstoviny ponořené, a přiveďte k varu. Vařte podle času na obalu, až jsou těstoviny hotové a omáčka mírně zhoustne. Ihned podávejte."
+  ],
+  "sources": [{ "url": "https://www.youtube.com/watch?v=wyMqTA9dfkA", "author": "Middle Eats · YouTube", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

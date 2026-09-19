@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "slug": "chorba-s-jehnecim-masem-a-cizrnou",
+  "title": "Chorba s jehněčím masem a cizrnou",
+  "description": "Libyjská polévka s jehněčím, rajčaty, cizrnou, orzem a čerstvou mátou.",
+  "demo": false,
+  "yield": { "amount": 5, "label": "porce" },
+  "prepMinutes": 20,
+  "cookMinutes": 55,
+  "category": "Polévky",
+  "tags": ["Jehněčí", "Libyjská kuchyně", "Cizrna"],
+  "ingredients": [{ "items": [
+    { "id": "jehneci", "name": "jehněčí kýta", "quantity": { "kind": "number", "value": 300 }, "unit": "g", "note": "na malé kostky" },
+    { "id": "cibule", "name": "střední cibule", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "najemno" },
+    { "id": "rajcata", "name": "krájená rajčata v konzervě", "quantity": { "kind": "number", "value": 400 }, "unit": "g" },
+    { "id": "cizrna", "name": "cizrna v konzervě", "quantity": { "kind": "number", "value": 400 }, "unit": "g", "note": "scezená" },
+    { "id": "orzo", "name": "těstoviny orzo", "quantity": { "kind": "number", "value": 75 }, "unit": "g" },
+    { "id": "rajcatovy-protlak", "name": "rajčatový protlak", "quantity": { "kind": "number", "value": 25 }, "unit": "g" },
+    { "id": "mata", "name": "čerstvá máta", "quantity": { "kind": "number", "value": 25 }, "unit": "g", "note": "nasekaná" },
+    { "id": "petrzel", "name": "čerstvá petržel", "quantity": { "kind": "text", "text": "malá hrst" }, "note": "nasekaná" },
+    { "id": "voda", "name": "voda", "quantity": { "kind": "number", "value": 1500 }, "unit": "ml" },
+    { "id": "olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 15 }, "unit": "ml" },
+    { "id": "maslo", "name": "máslo", "quantity": { "kind": "number", "value": 15 }, "unit": "ml", "approximate": true },
+    { "id": "koreneni", "name": "sůl, sušená máta, kurkuma, paprika, baharat a pepř", "quantity": { "kind": "text", "text": "podle zdroje" } },
+    { "id": "citron", "name": "citron", "quantity": { "kind": "text", "text": "k podávání" } }
+  ] }],
+  "steps": ["V hrnci rozehřejte olej s máslem a opečte maso. Přidejte cibuli, koření a protlak a krátce vše orestujte.", "Přidejte rajčata, cizrnu, vodu a sušenou mátu. Přiveďte k varu a zvolna vařte asi 40 minut, až maso změkne.", "Na pánvi nasucho krátce opečte orzo. Vmíchejte je do polévky spolu s petrželí a čerstvou mátou a vařte ještě asi 10 minut.", "Podávejte s citronem."],
+  "sources": [{ "url": "https://www.youtube.com/watch?v=zA5_0NZf1C4", "author": "Middle Eats · YouTube", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

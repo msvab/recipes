@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "slug": "fileja-s-ndujou", "title": "Fileja s ndujou", "description": "Těstoviny v pikantní rajčatové omáčce s kalábrijskou klobásou nduja.", "demo": false,
+  "yield": { "amount": 4, "label": "porce" }, "prepMinutes": 2, "cookMinutes": 12, "category": "Těstoviny", "tags": ["Italská kuchyně", "Těstoviny", "Pikantní"],
+  "ingredients": [{ "items": [
+    { "id": "testoviny", "name": "těstoviny fileja nebo jiné krátké", "quantity": { "kind": "number", "value": 400 }, "unit": "g" }, { "id": "nduja", "name": "nduja", "quantity": { "kind": "number", "value": 70 }, "unit": "g" }, { "id": "rajcata", "name": "drcená rajčata", "quantity": { "kind": "number", "value": 400 }, "unit": "g" }, { "id": "cesnek", "name": "stroužek česneku", "quantity": { "kind": "number", "value": 1 }, "unit": "ks" }, { "id": "olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 30 }, "unit": "ml" }, { "id": "pecorino", "name": "pecorino", "quantity": { "kind": "text", "text": "k podávání" } }
+  ] }],
+  "steps": ["Těstoviny uvařte v osolené vodě podle návodu a část vody z vaření si ponechte.", "Na oleji krátce rozvonějte česnek, přidejte nduju a nechte ji rozpustit. Vmíchejte rajčata a 10 minut zvolna vařte.", "Promíchejte s těstovinami, podle potřeby uvolněte trochou škrobové vody a podávejte s pecorinem."],
+  "sources": [{ "url": "https://www.insidetherustickitchen.com/fileja-alla-nduja/", "author": "Emily · Inside the Rustic Kitchen", "importedAt": "2026-09-19" }], "provenance": { "kind": "facts" }
+}

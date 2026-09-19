@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "slug": "veprove-v-mrkvi-s-hraskem", "title": "Vepřové v mrkvi s hráškem", "description": "Jednoduché dušené vepřové s mrkví, hráškem a jemným nádechem muškátového oříšku.", "demo": false,
+  "yield": { "amount": 4, "label": "porce" }, "prepMinutes": 15, "cookMinutes": 45, "category": "Hlavní jídla", "tags": ["Vepřové maso", "Česká kuchyně", "Dušené"],
+  "ingredients": [{ "items": [
+    { "id": "veprove-plec", "name": "vepřová plec", "quantity": { "kind": "number", "value": 600 }, "unit": "g", "note": "na kostky" }, { "id": "mrkev", "name": "mrkev", "quantity": { "kind": "number", "value": 600 }, "unit": "g", "note": "na kolečka" }, { "id": "hrasek", "name": "zelený hrášek", "quantity": { "kind": "number", "value": 200 }, "unit": "g" }, { "id": "maslo", "name": "máslo", "quantity": { "kind": "number", "value": 25 }, "unit": "g" }, { "id": "mouka", "name": "hladká mouka", "quantity": { "kind": "number", "value": 10 }, "unit": "g" }, { "id": "muskat", "name": "muškátový oříšek", "quantity": { "kind": "text", "text": "špetka" } }, { "id": "vyvar", "name": "vývar nebo voda", "quantity": { "kind": "number", "value": 500 }, "unit": "ml" }, { "id": "dochuceni", "name": "sůl a pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
+  ] }],
+  "steps": ["Na másle opečte kostky masa. Poprašte moukou a muškátovým oříškem, promíchejte a zalijte vývarem.", "Přiklopte a zvolna duste asi 30 minut.", "Přidejte mrkev a pokračujte v dušení do změknutí. Nakonec vmíchejte hrášek a krátce prohřejte. Dochuťte."],
+  "sources": [{ "url": "https://receptypanicuby.cz/cubi-favoriti/veprove-v-mrkvi-s-hraskem/", "author": "Pája Mähringová · Recepty paní Cuby", "importedAt": "2026-09-19" }], "provenance": { "kind": "facts" }
+}

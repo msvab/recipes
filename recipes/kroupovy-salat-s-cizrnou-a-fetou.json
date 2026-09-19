@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "slug": "kroupovy-salat-s-cizrnou-a-fetou",
+  "title": "Kroupový salát s pečenou cizrnou a fetou",
+  "description": "Sytý salát z rychle vařených krup, edamame, křupavé cizrny, fety a citronové zálivky.",
+  "demo": false,
+  "yield": { "amount": 4, "label": "porce" },
+  "prepMinutes": 10,
+  "cookMinutes": 12,
+  "category": "Saláty",
+  "tags": ["Vegetariánské", "Do 30 minut", "Luštěniny"],
+  "ingredients": [
+    {
+      "title": "Salát",
+      "items": [
+        { "id": "rychle-kroupy", "name": "rychle vařené ječné kroupy", "quantity": { "kind": "number", "value": 100 }, "unit": "g", "approximate": true },
+        { "id": "zeleninovy-vyvar", "name": "zeleninový vývar", "quantity": { "kind": "number", "value": 240 }, "unit": "ml", "approximate": true },
+        { "id": "edamame", "name": "mražené edamame", "quantity": { "kind": "number", "value": 115 }, "unit": "g", "approximate": true },
+        { "id": "pecena-cizrna", "name": "pečená křupavá cizrna", "quantity": { "kind": "number", "value": 45 }, "unit": "g", "approximate": true },
+        { "id": "feta", "name": "feta", "quantity": { "kind": "number", "value": 50 }, "unit": "g", "approximate": true },
+        { "id": "slunecnicova-seminka", "name": "slunečnicová semínka", "quantity": { "kind": "number", "value": 30 }, "unit": "g", "approximate": true },
+        { "id": "dochuceni", "name": "sůl, černý pepř a mletý římský kmín", "quantity": { "kind": "text", "text": "podle chuti" }, "note": "římský kmín je volitelný" }
+      ]
+    },
+    {
+      "title": "Citronová zálivka",
+      "items": [
+        { "id": "olivovy-olej", "name": "extra panenský olivový olej", "quantity": { "kind": "number", "value": 80 }, "unit": "ml", "approximate": true },
+        { "id": "citronova-stava", "name": "čerstvá citronová šťáva", "quantity": { "kind": "number", "value": 45 }, "unit": "ml", "approximate": true },
+        { "id": "citronova-kura", "name": "jemně nastrouhaná citronová kůra", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" },
+        { "id": "dijonska-horcice", "name": "dijonská hořčice", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp", "note": "volitelně" },
+        { "id": "sladidlo", "name": "cukr, med nebo javorový sirup", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp", "note": "volitelně" }
+      ]
+    }
+  ],
+  "steps": [
+    "Vývar přiveďte k varu, vsypte kroupy, přiklopte a na mírném plameni vařte 12 minut. Odstavte na 5 minut a nakypřete vidličkou.",
+    "Edamame dejte s 1–2 lžícemi vody do vhodné misky a krátce prohřejte, jen aby rozmrzlo.",
+    "Do velké mísy dejte kroupy, edamame, fetu a slunečnicová semínka.",
+    "V malé misce prošlehejte citronovou šťávu, sůl, pepř, případně římský kmín, hořčici a sladidlo. Zašlehejte olej a nakonec vmíchejte citronovou kůru.",
+    "Zálivku promíchejte se salátem, dolaďte sůl a pepř a těsně před podáváním přisypte pečenou cizrnu."
+  ],
+  "sources": [{ "url": "https://foodandflair.com/barley-salad-with-roasted-chickpeas-and-feta/", "author": "Christie · Food & Flair", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

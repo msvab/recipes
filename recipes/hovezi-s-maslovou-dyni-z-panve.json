@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "slug": "hovezi-s-maslovou-dyni-z-panve",
+  "title": "Hovězí s máslovou dýní z pánve",
+  "description": "Rychlé jídlo z jedné pánve s mletým hovězím, máslovou dýní, kapustou a paprikou.",
+  "demo": false,
+  "yield": { "amount": 4, "label": "porce" },
+  "prepMinutes": 10,
+  "cookMinutes": 30,
+  "category": "Hlavní jídla",
+  "tags": ["Hovězí maso", "Z jedné pánve", "Bez lepku"],
+  "ingredients": [
+    {
+      "items": [
+        { "id": "olivovy-olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 30 }, "unit": "ml", "approximate": true },
+        { "id": "maslova-dyne", "name": "máslová dýně", "quantity": { "kind": "number", "value": 400 }, "unit": "g", "note": "na kostky", "approximate": true },
+        { "id": "cervena-cibule", "name": "malá červená cibule", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "na kostičky" },
+        { "id": "cervena-paprika", "name": "červená paprika", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "na kostičky" },
+        { "id": "mlete-hovezi", "name": "mleté hovězí maso", "quantity": { "kind": "number", "value": 450 }, "unit": "g", "approximate": true },
+        { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "number", "value": 3 }, "unit": "ks", "note": "najemno" },
+        { "id": "rajcatovy-protlak", "name": "rajčatový protlak", "quantity": { "kind": "number", "value": 15 }, "unit": "ml", "approximate": true },
+        { "id": "sojova-omacka", "name": "sójová omáčka", "quantity": { "kind": "number", "value": 30 }, "unit": "ml", "approximate": true },
+        { "id": "chilli-vlocky", "name": "chilli vločky", "quantity": { "kind": "number", "value": 0.25 }, "unit": "tsp" },
+        { "id": "hovezi-vyvar", "name": "hovězí vývar", "quantity": { "kind": "number", "value": 240 }, "unit": "ml", "approximate": true },
+        { "id": "kapusta", "name": "kapusta kadeřavá", "quantity": { "kind": "number", "value": 60 }, "unit": "g", "note": "nahrubo nakrájená", "approximate": true },
+        { "id": "dochuceni", "name": "sůl a pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
+      ]
+    }
+  ],
+  "steps": [
+    "Ve velké pánvi rozehřejte olej na středním plameni. Přidejte dýni, cibuli a papriku a opékejte 6–8 minut do změknutí.",
+    "Přidejte mleté hovězí a česnek. Dalších 6–8 minut míchejte a maso vařečkou rozdrobujte.",
+    "Vmíchejte protlak, sójovou omáčku, chilli vločky a vývar. Zvolna vařte 15 minut.",
+    "Přidejte kapustu, přiklopte a ještě několik minut prohřívejte, až zvadne. Dochuťte solí a pepřem."
+  ],
+  "sources": [{ "url": "https://www.mashed.com/1427290/beef-and-butternut-squash-skillet-recipe/", "author": "Catherine Brookes · Mashed", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}

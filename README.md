@@ -31,13 +31,13 @@ Before browser tests, run `npx playwright install chromium`. CI installs its sys
 
 Use the repository skill in Codex:
 
-> Use $recipe-manager to prepare a recipe from this URL: …
+> Use $recipe-manager to add a recipe from this URL: …
 
-Or paste a recipe from ChatGPT, then ask Codex to process it. Review the Czech draft, measurements, and yield. When satisfied, request publication. Edits can be conversational, such as “Change the pasta recipe to use 250 g of pasta.”
+Or paste a recipe from ChatGPT, then ask Codex to process it. Codex writes the local recipe JSON into the Git working tree; review the Czech draft, measurements, and yield there. When satisfied, request publication. Edits can be conversational, such as “Change the pasta recipe to use 250 g of pasta.”
 
 The skill lives at `.agents/skills/recipe-manager/SKILL.md`. The executable contract is `src/lib/recipes/schema.ts`; working JSON files demonstrate the format. Missing yield or unclear conversion must be resolved rather than invented.
 
-Recipes are `recipes/<slug>.json`; stable slugs preserve links when titles change. Recipes are text-only; there are no photos or placeholders. Use `.staging/` for unreviewed local drafts; it is ignored. All tracked recipe files are publishable content. There is no private-recipe mode in a public repository.
+Recipes are `recipes/<slug>.json`; stable slugs preserve links when titles change. Recipes are text-only; there are no photos or placeholders. Git's working tree is the review stage: only commit reviewed recipe files. Raw source downloads, private correspondence, credentials, and unapproved images belong in temporary storage and must never be committed. There is no private-recipe mode in a public repository.
 
 The public collection starts empty, ready for your own recipes. An isolated sample remains in `tests/fixtures/` for automated checks and is not published on the website.
 
@@ -59,4 +59,4 @@ After publishing, inspect the `Deploy Pages` run and open the live page. For an 
 
 ## Scope
 
-See [requirements](REQUIREMENTS.md) and [implementation plan](IMPLEMENTATION_PLAN.md). Direct publication from ChatGPT/mobile is deferred to v2. No public upload endpoint, user accounts, or website editor is included.
+See the [requirements](REQUIREMENTS.md). Direct publication from ChatGPT/mobile is deferred to v2. No public upload endpoint, user accounts, or website editor is included.

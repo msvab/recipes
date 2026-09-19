@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "slug": "pstruh-peceny-s-citronem-a-bylinkami", "title": "Pstruh pečený s citronem a bylinkami", "description": "Rychle pečené filety pstruha s citronem, česnekem, kmínem a petrželí.", "demo": false,
+  "yield": { "amount": 5, "label": "porce" }, "prepMinutes": 10, "cookMinutes": 12, "category": "Ryby a mořské plody", "tags": ["Ryby", "Středomořská kuchyně", "Bez lepku"],
+  "ingredients": [{ "items": [
+    { "id": "pstruh", "name": "filety pstruha", "quantity": { "kind": "number", "value": 680 }, "unit": "g", "approximate": true }, { "id": "olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 60 }, "unit": "ml", "approximate": true }, { "id": "citron", "name": "citron", "quantity": { "kind": "number", "value": 1 }, "unit": "ks" }, { "id": "rimski-kmin", "name": "římský kmín", "quantity": { "kind": "number", "value": 1 }, "unit": "tsp" }, { "id": "paprika", "name": "sladká paprika", "quantity": { "kind": "number", "value": 0.5 }, "unit": "tsp" }, { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "number", "value": 2 }, "unit": "ks" }, { "id": "jarni-cibulka", "name": "jarní cibulky", "quantity": { "kind": "number", "value": 2 }, "unit": "ks" }, { "id": "petrzel", "name": "čerstvá petržel", "quantity": { "kind": "number", "value": 15 }, "unit": "g", "approximate": true }, { "id": "dochuceni", "name": "sůl a pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
+  ] }],
+  "steps": ["Troubu předehřejte na 205 °C. Filety dejte do zapékací mísy a osolte, opepřete, posypte kmínem a paprikou.", "Promíchejte olej, citronovou šťávu a kůru, česnek, cibulku a petržel. Směsí přelijte rybu.", "Pečte 10–12 minut, až je ryba neprůsvitná a snadno se rozpadá vidličkou."],
+  "sources": [{ "url": "https://www.themediterraneandish.com/easy-baked-trout-recipe/", "author": "Suzy Karadsheh · The Mediterranean Dish", "importedAt": "2026-09-19" }], "provenance": { "kind": "facts" }
+}

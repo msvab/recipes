@@ -88,7 +88,7 @@ Create a personal recipe collection that is easy to maintain through Codex and p
 
 ## Leading architecture candidate
 
-A static website hosted on GitHub Pages, built from recipe files in a public GitHub repository, with authoring and publishing handled through Codex. This is a candidate for implementation planning, not a finalized technical design.
+A static website hosted on GitHub Pages, built from recipe files in a public GitHub repository, with authoring and publishing handled through Codex.
 
 The recipe schema, frontend technology, repository layout, skill packaging, validation, and deployment workflow remain implementation decisions.
 
