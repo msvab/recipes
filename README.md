@@ -15,15 +15,15 @@ npm run dev
 
 Open the URL printed by Astro (normally http://localhost:4321). Follow local AGENTS/RTK instructions when using these commands through Codex.
 
-| Command | Purpose |
-| --- | --- |
-| `npm run validate` | Validate recipe data, image paths, and provenance metadata |
-| `npm run check` | Astro and TypeScript checks |
-| `npm test` | Focused schema, search, and scaling tests |
-| `npm run build` | Validate and generate `dist/` |
-| `npm run verify` | Type check, tests, and production build |
-| `npm run preview` | Serve the production build locally |
-| `npm run test:browser` | Desktop/mobile browser tests at `/recipes/` |
+| Command                | Purpose                                      |
+| ---------------------- | -------------------------------------------- |
+| `npm run validate`     | Validate recipe data and provenance metadata |
+| `npm run check`        | Astro and TypeScript checks                  |
+| `npm test`             | Focused schema, search, and scaling tests    |
+| `npm run build`        | Validate and generate `dist/`                |
+| `npm run verify`       | Type check, tests, and production build      |
+| `npm run preview`      | Serve the production build locally           |
+| `npm run test:browser` | Desktop/mobile browser tests at `/recipes/`  |
 
 Before browser tests, run `npx playwright install chromium`. CI installs its system dependencies too. Browser tests build and serve the production output on port 4322. For a production-like local build, use `BASE_PATH=/recipes/ SITE_URL=https://michal.svab.net npm run build` and the same environment when previewing.
 
@@ -33,17 +33,17 @@ Use the repository skill in Codex:
 
 > Use $recipe-manager to prepare a recipe from this URL: …
 
-Or paste a recipe from ChatGPT, then ask Codex to process it. Review the Czech draft, measurements, yield, and image choice. When satisfied, request publication. Edits can be conversational, such as “Change the pasta recipe to use 250 g of pasta.”
+Or paste a recipe from ChatGPT, then ask Codex to process it. Review the Czech draft, measurements, and yield. When satisfied, request publication. Edits can be conversational, such as “Change the pasta recipe to use 250 g of pasta.”
 
 The skill lives at `.agents/skills/recipe-manager/SKILL.md`. The executable contract is `src/lib/recipes/schema.ts`; working JSON files demonstrate the format. Missing yield or unclear conversion must be resolved rather than invented.
 
-Recipes are `recipes/<slug>.json`; stable slugs preserve links when titles change. Photos live in `src/assets/recipes/`. Use `.staging/` for unreviewed local drafts; it is ignored. All tracked recipe files are publishable content. There is no private-recipe mode in a public repository.
+Recipes are `recipes/<slug>.json`; stable slugs preserve links when titles change. Recipes are text-only; there are no photos or placeholders. Use `.staging/` for unreviewed local drafts; it is ignored. All tracked recipe files are publishable content. There is no private-recipe mode in a public repository.
 
 The public collection starts empty, ready for your own recipes. An isolated sample remains in `tests/fixtures/` for automated checks and is not published on the website.
 
 ## Public reuse policy
 
-Import cooking facts into fresh Czech instructions. Do not copy protected blog prose, stories, translations, or photos without permission or a suitable licence. Keep source attribution; credit alone does not establish permission. Record the permission basis for reused protected text and third-party photos. Use a placeholder when photo permission is unclear. Optional AI images are clearly labeled.
+Import cooking facts into fresh Czech instructions. Do not copy protected blog prose, stories, or translations without permission or a suitable licence. Keep source attribution; credit alone does not establish permission. Record the permission basis for reused protected text. The importer does not collect or generate images.
 
 Validation checks that required metadata exists, not whether permission is legally sufficient. Never commit raw source pages, private correspondence, credentials, or unapproved photos. Deleting a tracked file does not erase Git history.
 

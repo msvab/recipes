@@ -18,7 +18,7 @@ import {
 } from '../src/lib/recipes/search';
 import sample from './fixtures/recipe.json';
 
-test('sample recipes validate and asset collection loads', async () => {
+test('recipe collection validates', async () => {
   assert.ok((await loadRecipes()).length >= 0);
 });
 test('schema rejects unsupported units, invalid yield, duplicate IDs and reversed ranges', () => {
@@ -49,7 +49,7 @@ test('schema rejects unsupported units, invalid yield, duplicate IDs and reverse
     assert.equal(recipeSchema.safeParse(recipe).success, false);
   }
 });
-test('permission requirements apply to protected text and third-party photos', () => {
+test('permission requirements apply to protected text', () => {
   assert.equal(
     recipeSchema.safeParse({ ...sample, provenance: { kind: 'facts' } })
       .success,
@@ -58,7 +58,7 @@ test('permission requirements apply to protected text and third-party photos', (
   assert.equal(
     recipeSchema.safeParse({
       ...sample,
-      image: { kind: 'licensed', file: 'photo.jpg', alt: 'Foto' },
+      provenance: { kind: 'licensed' },
     }).success,
     false,
   );
@@ -79,19 +79,11 @@ test('permission requirements apply to protected text and third-party photos', (
       ...sample,
       sources,
       provenance: { kind: 'licensed', permission },
-      image: { kind: 'licensed', file: 'photo.jpg', alt: 'Foto', permission },
-    }).success,
-    true,
-  );
-  assert.equal(
-    recipeSchema.safeParse({
-      ...sample,
-      image: { kind: 'ai', file: 'photo.webp', alt: 'Ilustrace' },
     }).success,
     true,
   );
 });
-test('loader rejects duplicate slugs and missing photo files', async () => {
+test('loader rejects duplicate slugs', async () => {
   const root = await mkdtemp(join(tmpdir(), 'recipes-test-'));
   try {
     await mkdir(join(root, 'recipes'));
@@ -107,15 +99,6 @@ test('loader rejects duplicate slugs and missing photo files', async () => {
       loadRecipes(root),
       /Duplicate slug|Filename must match/,
     );
-    await rm(join(root, 'recipes', 'duplicate.json'));
-    await writeFile(
-      join(root, 'recipes', `${sample.slug}.json`),
-      JSON.stringify({
-        ...sample,
-        image: { kind: 'owner', file: 'missing.jpg', alt: 'Foto' },
-      }),
-    );
-    await assert.rejects(loadRecipes(root), /ENOENT/);
   } finally {
     await rm(root, { recursive: true, force: true });
   }

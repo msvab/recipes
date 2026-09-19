@@ -17,27 +17,11 @@ const tags = [...new Set(recipes.flatMap((r) => r.tags))].sort((a, b) =>
 <Layout>
   <section class="intro shell">
     <div>
-      <p class="eyebrow">
-        <span></span> SCHOVAT. UVAŘIT. ZNOVU.
-      </p>
       <h1>
         Dobré recepty.
         <br />
         <em>Vždycky po ruce.</em>
       </h1>
-      <p class="intro-copy">
-        Malé radosti z domácí kuchyně. Na rychlé večeře,
-        <br class="desktop-break" /> pomalá rána i něco sladkého ke kávě.
-      </p>
-    </div>
-    <div class="intro-note">
-      <span aria-hidden="true">✳</span>
-      <p>
-        To dobré
-        <br />
-        si schováme.
-      </p>
-      <small>VAŠE MÍSTO U STOLU</small>
     </div>
   </section>
   <section class="collection shell" aria-label="Sbírka receptů">
@@ -113,8 +97,8 @@ const tags = [...new Set(recipes.flatMap((r) => r.tags))].sort((a, b) =>
       </p>
     </noscript>
     <div class="recipe-grid">
-      {recipes.map((recipe, index) => (
-        <RecipeCard recipe={recipe} index={index} />
+      {recipes.map((recipe) => (
+        <RecipeCard recipe={recipe} />
       ))}
     </div>
     {recipes.length === 0 && (

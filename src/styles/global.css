@@ -126,8 +126,7 @@ h2 {
 }
 .header-note,
 .eyebrow,
-.section-number,
-.intro-note small {
+.section-number {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -167,31 +166,6 @@ h2 {
 .intro h1 em {
   font-weight: 400;
   color: #6c7c66;
-}
-.intro-copy {
-  margin: 26px 0 0;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.8;
-}
-.intro-note {
-  text-align: center;
-  margin-right: 56px;
-  transform: rotate(7deg);
-}
-.intro-note > span {
-  font-size: 74px;
-  line-height: 1;
-  color: var(--accent);
-  display: block;
-  margin-bottom: 16px;
-}
-.intro-note p {
-  font: italic 26px/1.15 var(--serif);
-  margin-bottom: 22px;
-}
-.intro-note small {
-  font-size: 8px;
 }
 .collection {
   padding-bottom: 65px;
@@ -342,84 +316,14 @@ h2 {
   display: block;
   height: 100%;
 }
-.card-image {
-  position: relative;
-}
-.recipe-image {
-  position: relative;
-  aspect-ratio: 1.48;
-  overflow: hidden;
-  height: 100%;
-}
-.recipe-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.palette-0 {
-  --art-bg: #e8eddf;
-  --art-ink: #5d7656;
-}
-.palette-1 {
-  --art-bg: #eee1cc;
-  --art-ink: #947143;
-}
-.palette-2 {
-  --art-bg: #ecddd2;
-  --art-ink: #9b6652;
-}
-.palette-3 {
-  --art-bg: #dfe8e6;
-  --art-ink: #5b7b74;
-}
-.is-placeholder {
-  background: var(--art-bg, #e8eddf);
-  color: var(--art-ink, #5d7656);
-}
-.placeholder-art {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.placeholder-art svg {
-  width: 85%;
-  height: auto;
-  max-height: 90%;
-  margin-top: 8px;
-}
-.art-label {
-  display: none;
-}
-.photo-pending {
-  position: absolute;
-  bottom: 12px;
-  right: 14px;
-  font-size: 9px;
-  letter-spacing: 0.6px;
-}
 .card-category {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: #fffdf2e8;
+  display: inline-block;
+  background: #e8eddf;
   border-radius: 4px;
-  font-size: 9px;
+  font-size: 10px;
   padding: 4px 10px;
+  margin-bottom: 18px;
   letter-spacing: 0.4px;
-}
-.image-ai-label {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #243d32e8;
-  color: white;
-  padding: 8px 12px;
-  font-size: 11px;
 }
 .card-body {
   padding: 21px 22px 14px;
@@ -476,15 +380,9 @@ h2 {
   color: var(--muted);
   font-size: 10px;
 }
-.site-footer p {
-  margin: 0;
-}
 .footer-brand {
   font: 24px var(--serif);
   color: var(--ink);
-}
-.site-footer > span {
-  font-style: italic;
 }
 .empty-state {
   text-align: center;
@@ -527,12 +425,10 @@ h2 {
   margin: 30px 0;
 }
 .detail-hero {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
-  align-items: center;
+  max-width: 860px;
   margin-bottom: 36px;
 }
+
 .detail-heading h1 {
   font-size: clamp(38px, 4.4vw, 60px);
   letter-spacing: -1.8px;
@@ -543,13 +439,8 @@ h2 {
   margin: 22px 0;
   font-size: 15px;
 }
-.detail-image {
-  border-radius: 10px;
-  overflow: hidden;
-  height: 100%;
-  min-height: 300px;
-}
 .detail-tags {
+  margin-top: 20px;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
@@ -733,9 +624,6 @@ h2 {
   .header-note {
     display: none;
   }
-  .intro-note {
-    margin-right: 15px;
-  }
   .recipe-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -786,13 +674,6 @@ h2 {
   .intro h1 {
     font-size: 43px;
     letter-spacing: -1.8px;
-  }
-  .intro-note {
-    display: none;
-  }
-  .intro-copy {
-    font-size: 13px;
-    margin-top: 21px;
   }
   .eyebrow {
     font-size: 8px;
@@ -853,9 +734,6 @@ h2 {
   .card-body h2 {
     font-size: 29px;
   }
-  .card-image .recipe-image {
-    aspect-ratio: 1.65;
-  }
   .card-body p {
     min-height: 0;
   }
@@ -864,23 +742,12 @@ h2 {
     gap: 12px;
     padding-block: 24px;
   }
-  .site-footer p {
-    width: calc(100% - 85px);
-    text-align: right;
-  }
-  .site-footer > span {
-    display: none;
-  }
   .detail-hero {
     grid-template-columns: 1fr;
     gap: 25px;
   }
   .detail-heading h1 {
     font-size: 43px;
-  }
-  .detail-image {
-    min-height: 0;
-    aspect-ratio: 1.4;
   }
   .detail-description {
     font-size: 14px;
@@ -919,9 +786,6 @@ h2 {
   .demo-note {
     font-size: 10px;
   }
-  .desktop-break {
-    display: none;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -937,7 +801,6 @@ h2 {
   .back-link,
   .serving-controls,
   .detail-tags,
-  .detail-image,
   .skip-link {
     display: none !important;
   }

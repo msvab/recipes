@@ -1,22 +1,17 @@
 ---
 import type { Recipe } from '../lib/recipes/schema';
 import { withBase } from '../lib/urls';
-import RecipeImage from './RecipeImage.astro';
 interface Props {
   recipe: Recipe;
-  index: number;
 }
-const { recipe, index } = Astro.props;
+const { recipe } = Astro.props;
 const minutes = (recipe.prepMinutes ?? 0) + (recipe.cookMinutes ?? 0);
 ---
 
 <article class="recipe-card" data-slug={recipe.slug}>
   <a href={withBase(`recepty/${recipe.slug}/`)} class="card-link">
-    <div class:list={['card-image', `palette-${index % 4}`]}>
-      <RecipeImage image={recipe.image} category={recipe.category} />
-      <span class="card-category">{recipe.category}</span>
-    </div>
     <div class="card-body">
+      <span class="card-category">{recipe.category}</span>
       <div class="card-meta">
         <span>
           {minutes
@@ -26,7 +21,7 @@ const minutes = (recipe.prepMinutes ?? 0) + (recipe.cookMinutes ?? 0);
         {recipe.demo && <span class="demo-badge">Ukázkový recept</span>}
       </div>
       <h2>{recipe.title}</h2>
-      <p>{recipe.description}</p>
+      {recipe.description && <p>{recipe.description}</p>}
       <div class="card-bottom">
         <span>{recipe.tags.slice(0, 2).join(' · ')}</span>
         <span class="card-arrow" aria-hidden="true">

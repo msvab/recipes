@@ -33,8 +33,8 @@ Create a personal recipe collection that is easy to maintain through Codex and p
 - Do not copy a source's stories, distinctive descriptions, or other protected wording without permission or a suitable licence. AI paraphrasing alone is not evidence that reuse is permitted.
 - Reproduce or translate protected source text only when permission or a licence allows the intended reuse, including translation where applicable.
 - Preserve source links and author credit. Attribution alone does not replace permission.
-- For reused protected text or third-party photos, record the permission or licence basis and comply with its conditions, including required attribution.
-- If reuse permission is unclear, omit the affected text or photo and flag the issue during review. A recipe may still publish using independently written factual instructions and a permitted photo or placeholder.
+- For reused protected text, record the permission or licence basis and comply with its conditions, including required attribution.
+- If reuse permission is unclear, omit the affected text and flag the issue during review. A recipe may still publish using independently written factual instructions.
 - Apply this policy to both the public website and public repository. Do not commit unapproved source copies or images as intermediate import files.
 - This policy reduces publishing risk; it is not a guarantee that every imported recipe is legally cleared.
 
@@ -47,7 +47,7 @@ Create a personal recipe collection that is easy to maintain through Codex and p
 - Preparation and cooking times when available.
 - Tags and/or categories.
 - Source attribution and link when available.
-- One image slot per recipe.
+- Text-only recipe pages; no recipe images or placeholders.
 
 ### Language and measurements
 
@@ -66,12 +66,10 @@ Create a personal recipe collection that is easy to maintain through Codex and p
 - Do not automatically scale cooking times or temperatures.
 - Preserve qualitative quantities such as "to taste."
 
-### Images
+### Text-only presentation
 
-- Use a source recipe photo when reuse is permitted, or a photo supplied by the owner that the owner has the right to publish. Record the permission or licence basis for third-party photos.
-- If neither is available, allow publication with a placeholder.
-- An AI-generated illustrative placeholder is permitted but not required.
-- Clearly label any AI-generated image in Czech, for example: "Ilustrační obrázek vytvořený AI."
+- Do not import, store, generate, or display recipe photos or illustrations.
+- No image placeholders, image attribution fields, or photo-permission prompts.
 
 ### Browsing and discovery
 
@@ -115,8 +113,8 @@ The recipe schema, frontend technology, repository layout, skill packaging, vali
 4. Public visitors can browse, search, filter, and open recipes without authentication on phone and desktop.
 5. Changing servings scales numeric ingredient quantities without changing temperatures or cooking times.
 6. Recipes follow the agreed Czech language and measurement conventions.
-7. Each recipe displays a photo or placeholder, with any AI-generated image clearly identified.
+7. Recipe cards and pages display text only, without image areas or placeholders.
 8. Public visitors cannot publish changes using the website or access publishing credentials.
 9. The proposed deployment uses free hosting unless the owner explicitly accepts a justified paid alternative.
 10. Imported recipes use fresh Czech instructions based on cooking facts unless reuse of the original protected wording is permitted; copied blog stories and distinctive descriptions are excluded by default.
-11. Reused protected text and third-party photos have a recorded permission or licence basis, with required attribution. When permission is unclear, the affected material is excluded from both the website and public repository.
+11. Reused protected text have a recorded permission or licence basis, with required attribution. When permission is unclear, the affected material is excluded from both the website and public repository.

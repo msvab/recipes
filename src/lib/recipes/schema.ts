@@ -45,26 +45,6 @@ const ingredient = z
       });
   });
 
-const imagePath = z
-  .string()
-  .regex(
-    /^[a-z0-9][a-z0-9-]*\.(jpg|jpeg|png|webp|avif)$/,
-    'Use a filename inside src/assets/recipes (no directories or remote URLs)',
-  );
-const imageSchema = z.discriminatedUnion('kind', [
-  z.object({ kind: z.literal('placeholder') }).strict(),
-  z.object({ kind: z.literal('owner'), file: imagePath, alt: text }).strict(),
-  z
-    .object({
-      kind: z.literal('licensed'),
-      file: imagePath,
-      alt: text,
-      permission,
-    })
-    .strict(),
-  z.object({ kind: z.literal('ai'), file: imagePath, alt: text }).strict(),
-]);
-
 export const recipeSchema = z
   .object({
     schemaVersion: z.literal(1),
@@ -99,7 +79,6 @@ export const recipeSchema = z
       z.object({ kind: z.literal('facts') }).strict(),
       z.object({ kind: z.literal('licensed'), permission }).strict(),
     ]),
-    image: imageSchema,
   })
   .strict()
   .superRefine((recipe, ctx) => {

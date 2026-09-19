@@ -3,27 +3,131 @@
   "slug": "hrachova-polevka-s-koprem",
   "title": "Hrachová polévka s koprem a opečenou cibulí",
   "demo": false,
-  "yield": { "amount": 6, "label": "porce" },
+  "yield": {
+    "amount": 6,
+    "label": "porce"
+  },
   "prepMinutes": 15,
   "cookMinutes": 60,
   "category": "Polévky",
   "tags": ["Veganské", "Vegetariánské"],
   "ingredients": [
-    { "title": "Polévka", "items": [
-      { "id": "olej", "name": "olivový olej", "quantity": { "kind": "number", "value": 2 }, "unit": "tbsp" },
-      { "id": "cibule-zaklad", "name": "střední cibule", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "nasekaná" },
-      { "id": "celer-rapik", "name": "řapíkatý celer", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "řapíky, na kostičky" },
-      { "id": "mrkev", "name": "střední mrkev", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "na kostičky" },
-      { "id": "celer-bulva", "name": "střední bulva celeru", "quantity": { "kind": "number", "value": 0.25 }, "unit": "ks", "note": "na kostičky" },
-      { "id": "vyvar", "name": "zeleninový vývar", "quantity": { "kind": "number", "value": 6 }, "unit": "cup" },
-      { "id": "hrach", "name": "suchý zelený půlený hrách", "quantity": { "kind": "number", "value": 2 }, "unit": "cup", "note": "propláchnutý" },
-      { "id": "tymian", "name": "čerstvý tymián", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "snítka" },
-      { "id": "kopr", "name": "nasekaný čerstvý kopr", "quantity": { "kind": "number", "value": 4 }, "unit": "tbsp", "note": "polovina do polévky, polovina k podávání" },
-      { "id": "dochuceni", "name": "sůl a pepř", "quantity": { "kind": "text", "text": "podle chuti" } }
-    ] },
-    { "title": "Navrch", "items": [
-      { "id": "cibule-navrch", "name": "střední cibule", "quantity": { "kind": "number", "value": 2 }, "unit": "ks", "note": "na plátky" }
-    ] }
+    {
+      "title": "Polévka",
+      "items": [
+        {
+          "id": "olej",
+          "name": "olivový olej",
+          "quantity": {
+            "kind": "number",
+            "value": 2
+          },
+          "unit": "tbsp"
+        },
+        {
+          "id": "cibule-zaklad",
+          "name": "střední cibule",
+          "quantity": {
+            "kind": "number",
+            "value": 2
+          },
+          "unit": "ks",
+          "note": "nasekaná"
+        },
+        {
+          "id": "celer-rapik",
+          "name": "řapíkatý celer",
+          "quantity": {
+            "kind": "number",
+            "value": 2
+          },
+          "unit": "ks",
+          "note": "řapíky, na kostičky"
+        },
+        {
+          "id": "mrkev",
+          "name": "střední mrkev",
+          "quantity": {
+            "kind": "number",
+            "value": 2
+          },
+          "unit": "ks",
+          "note": "na kostičky"
+        },
+        {
+          "id": "celer-bulva",
+          "name": "střední bulva celeru",
+          "quantity": {
+            "kind": "number",
+            "value": 0.25
+          },
+          "unit": "ks",
+          "note": "na kostičky"
+        },
+        {
+          "id": "vyvar",
+          "name": "zeleninový vývar",
+          "quantity": {
+            "kind": "number",
+            "value": 6
+          },
+          "unit": "cup"
+        },
+        {
+          "id": "hrach",
+          "name": "suchý zelený půlený hrách",
+          "quantity": {
+            "kind": "number",
+            "value": 2
+          },
+          "unit": "cup",
+          "note": "propláchnutý"
+        },
+        {
+          "id": "tymian",
+          "name": "čerstvý tymián",
+          "quantity": {
+            "kind": "number",
+            "value": 1
+          },
+          "unit": "ks",
+          "note": "snítka"
+        },
+        {
+          "id": "kopr",
+          "name": "nasekaný čerstvý kopr",
+          "quantity": {
+            "kind": "number",
+            "value": 4
+          },
+          "unit": "tbsp",
+          "note": "polovina do polévky, polovina k podávání"
+        },
+        {
+          "id": "dochuceni",
+          "name": "sůl a pepř",
+          "quantity": {
+            "kind": "text",
+            "text": "podle chuti"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Navrch",
+      "items": [
+        {
+          "id": "cibule-navrch",
+          "name": "střední cibule",
+          "quantity": {
+            "kind": "number",
+            "value": 2
+          },
+          "unit": "ks",
+          "note": "na plátky"
+        }
+      ]
+    }
   ],
   "steps": [
     "Na oleji opékejte nasekanou cibuli asi 15 minut dozlatova; občas promíchejte.",
@@ -31,7 +135,14 @@
     "Mezitím na pánvi opékejte cibulové plátky přibližně 15 minut do výrazného zhnědnutí a křupava. Často míchejte.",
     "Polévku dochuťte solí a pepřem. Podávejte s opečenou cibulí a zbývajícím koprem."
   ],
-  "sources": [{ "url": "https://www.rhubarbarians.com/danish-split-pea-soup-with-dill/", "author": "Trish Bozeman · Rhubarbarians", "importedAt": "2026-09-19" }],
-  "provenance": { "kind": "facts" },
-  "image": { "kind": "placeholder" }
+  "sources": [
+    {
+      "url": "https://www.rhubarbarians.com/danish-split-pea-soup-with-dill/",
+      "author": "Trish Bozeman · Rhubarbarians",
+      "importedAt": "2026-09-19"
+    }
+  ],
+  "provenance": {
+    "kind": "facts"
+  }
 }

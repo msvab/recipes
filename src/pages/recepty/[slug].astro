@@ -4,7 +4,6 @@ import type { Recipe } from '../../lib/recipes/schema';
 import { formatIngredient, formatNumber } from '../../lib/recipes/quantities';
 import { withBase } from '../../lib/urls';
 import Layout from '../../layouts/Layout.astro';
-import RecipeImage from '../../components/RecipeImage.astro';
 export async function getStaticPaths() {
   return (await getCollection('recipes')).map(({ data }) => ({
     params: { slug: data.slug },
@@ -29,7 +28,9 @@ const { recipe } = Astro.props;
           {recipe.demo && ' · UKÁZKOVÝ RECEPT'}
         </p>
         <h1>{recipe.title}</h1>
-        <p class="detail-description">{recipe.description}</p>
+        {recipe.description && (
+          <p class="detail-description">{recipe.description}</p>
+        )}
         <div class="detail-tags">
           {recipe.tags.map((tag) => (
             <a href={`${withBase()}?tag=${encodeURIComponent(tag)}`}>{tag}</a>
@@ -60,9 +61,6 @@ const { recipe } = Astro.props;
             </dd>
           </div>
         </dl>
-      </div>
-      <div class="detail-image palette-0">
-        <RecipeImage image={recipe.image} category={recipe.category} eager />
       </div>
     </div>
     {recipe.demo && (
@@ -176,21 +174,6 @@ const { recipe } = Astro.props;
           {recipe.provenance.permission.url && (
             <a href={recipe.provenance.permission.url}>Podmínky použití ↗</a>
           )}
-        </p>
-      )}
-      {recipe.image.kind === 'licensed' && (
-        <p>
-          Fotografie: {recipe.image.permission.attribution} ·{' '}
-          {recipe.image.permission.basis}{' '}
-          {recipe.image.permission.url && (
-            <a href={recipe.image.permission.url}>Licence / svolení ↗</a>
-          )}
-        </p>
-      )}
-      {recipe.image.kind === 'owner' && <p>Fotografie z vlastní sbírky.</p>}
-      {recipe.image.kind === 'ai' && (
-        <p>
-          Ilustrační obrázek vytvořený AI; nejde o fotografii hotového pokrmu.
         </p>
       )}
     </aside>
