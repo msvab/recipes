@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "slug": "kure-s-kesu-orechy-a-zazvorem",
+  "title": "Kuře s kešu ořechy a zázvorem",
+  "description": "Kuřecí restované se žampiony, paprikou, vodními kaštany a slanými kešu ořechy.",
+  "demo": false,
+  "yield": { "amount": 6, "label": "porce" },
+  "prepMinutes": 15,
+  "cookMinutes": 15,
+  "category": "Hlavní jídla",
+  "tags": ["Kuřecí maso", "Asijská kuchyně", "Kešu"],
+  "ingredients": [{ "items": [
+    { "id": "skrob", "name": "kukuřičný škrob", "quantity": { "kind": "number", "value": 2 }, "unit": "tbsp" },
+    { "id": "cukr", "name": "třtinový cukr", "quantity": { "kind": "number", "value": 1 }, "unit": "tbsp" },
+    { "id": "vyvar", "name": "kuřecí vývar", "quantity": { "kind": "number", "value": 300 }, "unit": "ml", "approximate": true },
+    { "id": "sojova-omacka", "name": "sójová omáčka", "quantity": { "kind": "number", "value": 30 }, "unit": "ml" },
+    { "id": "repkovy-olej", "name": "řepkový olej", "quantity": { "kind": "number", "value": 45 }, "unit": "ml" },
+    { "id": "kureci-prsa", "name": "kuřecí prsa", "quantity": { "kind": "number", "value": 680 }, "unit": "g", "note": "na kostky", "approximate": true },
+    { "id": "zampiony", "name": "čerstvé žampiony", "quantity": { "kind": "number", "value": 225 }, "unit": "g", "note": "na plátky", "approximate": true },
+    { "id": "zelena-paprika", "name": "malá zelená paprika", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "na proužky" },
+    { "id": "vodni-kastany", "name": "krájené vodní kaštany v konzervě", "quantity": { "kind": "number", "value": 225 }, "unit": "g", "note": "scezené", "approximate": true },
+    { "id": "zazvor", "name": "čerstvý zázvor", "quantity": { "kind": "number", "value": 1.5 }, "unit": "tsp", "note": "najemno nastrouhaný" },
+    { "id": "jarni-cibulka", "name": "jarní cibulky", "quantity": { "kind": "number", "value": 4 }, "unit": "ks", "note": "na kolečka" },
+    { "id": "kesu", "name": "solené kešu ořechy", "quantity": { "kind": "number", "value": 90 }, "unit": "g", "approximate": true },
+    { "id": "ryze", "name": "horká vařená rýže", "quantity": { "kind": "text", "text": "k podávání" } }
+  ] }],
+  "steps": [
+    "Promíchejte škrob, cukr, vývar a sójovou omáčku dohladka.",
+    "Ve velké pánvi rozehřejte část oleje a na středně vysokém plameni orestujte kuře do propečení. Přesuňte je stranou.",
+    "Do pánve přidejte zbytek oleje, žampiony, papriku, vodní kaštany a zázvor. Restujte 3–5 minut, aby paprika zůstala křupavá.",
+    "Vlijte vývarovou směs, přidejte cibulku a přiveďte k varu. Za 1–2 minuty, až omáčka zhoustne, vmíchejte kuře a kešu. Podávejte s rýží."
+  ],
+  "sources": [{ "url": "https://www.tasteofhome.com/recipes/cashew-chicken-with-ginger/", "author": "Nicholas Marshall · Taste of Home", "importedAt": "2026-09-19" }],
+  "provenance": { "kind": "facts" }
+}
