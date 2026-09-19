@@ -39,7 +39,7 @@ The skill lives at `.agents/skills/recipe-manager/SKILL.md`. The executable cont
 
 Recipes are `recipes/<slug>.json`; stable slugs preserve links when titles change. Photos live in `src/assets/recipes/`. Use `.staging/` for unreviewed local drafts; it is ignored. All tracked recipe files are publishable content. There is no private-recipe mode in a public repository.
 
-Three explicitly marked, original demonstration recipes are supplied. They have not been verified by cooking. Remove or replace them when adding your own collection. Do not set `demo: false` merely to hide their labels.
+The public collection starts empty, ready for your own recipes. An isolated sample remains in `tests/fixtures/` for automated checks and is not published on the website.
 
 ## Public reuse policy
 
