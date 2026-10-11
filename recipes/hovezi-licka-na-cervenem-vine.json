@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "slug": "hovezi-licka-na-cervenem-vine",
+  "title": "Hovězí líčka na červeném víně",
+  "description": "Pomalu dušená hovězí líčka s kořenovou zeleninou, červeným vínem a jemnou omáčkou.",
+  "demo": false,
+  "yield": { "amount": 6, "label": "porce" },
+  "cookMinutes": 240,
+  "category": "Hlavní jídla",
+  "tags": ["Hovězí maso", "Česká kuchyně", "Dušené"],
+  "ingredients": [
+    {
+      "title": "Líčka a omáčka",
+      "items": [
+        { "id": "hovezi-licka", "name": "hovězí líčka", "quantity": { "kind": "number", "value": 800 }, "unit": "g" },
+        { "id": "rostlinny-olej", "name": "rostlinný olej", "quantity": { "kind": "number", "value": 4 }, "unit": "tbsp" },
+        { "id": "maslo", "name": "máslo", "quantity": { "kind": "number", "value": 180 }, "unit": "g" },
+        { "id": "mrkev", "name": "mrkev", "quantity": { "kind": "number", "value": 1 }, "unit": "ks" },
+        { "id": "celer", "name": "celerová bulva", "quantity": { "kind": "number", "value": 0.5 }, "unit": "ks" },
+        { "id": "petrzel-koren", "name": "kořenová petržel", "quantity": { "kind": "number", "value": 1 }, "unit": "ks" },
+        { "id": "cibule", "name": "cibule", "quantity": { "kind": "number", "value": 2 }, "unit": "ks" },
+        { "id": "cesnek", "name": "stroužky česneku", "quantity": { "kind": "number", "value": 2 }, "unit": "ks" },
+        { "id": "protlak", "name": "rajčatový protlak", "quantity": { "kind": "number", "value": 1 }, "unit": "tbsp" },
+        { "id": "cervene-vino", "name": "suché červené víno", "quantity": { "kind": "number", "value": 250 }, "unit": "ml" },
+        { "id": "hovezi-vyvar", "name": "hovězí vývar", "quantity": { "kind": "number", "value": 600 }, "unit": "ml" },
+        { "id": "hladka-mouka", "name": "hladká mouka", "quantity": { "kind": "number", "value": 2 }, "unit": "tbsp" },
+        { "id": "zampiony", "name": "žampiony", "quantity": { "kind": "number", "value": 4 }, "unit": "ks" },
+        { "id": "petrzel-nat", "name": "hladkolistá petržel", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "svazek" },
+        { "id": "sul", "name": "sůl", "quantity": { "kind": "text", "text": "podle chuti" } },
+        { "id": "pepr-mlety", "name": "čerstvě mletý pepř", "quantity": { "kind": "text", "text": "podle chuti" } },
+        { "id": "bramborova-kase", "name": "bramborová kaše", "quantity": { "kind": "text", "text": "k podávání" } }
+      ]
+    },
+    {
+      "title": "Bouquet garni",
+      "items": [
+        { "id": "bobkovy-list", "name": "bobkové listy", "quantity": { "kind": "number", "value": 3 }, "unit": "ks" },
+        { "id": "nove-koreni", "name": "nové koření", "quantity": { "kind": "number", "value": 4 }, "unit": "ks", "note": "kuličky" },
+        { "id": "pepr-cely", "name": "celý pepř", "quantity": { "kind": "number", "value": 6 }, "unit": "ks", "note": "kuličky" },
+        { "id": "tymian", "name": "tymián", "quantity": { "kind": "number", "value": 1 }, "unit": "ks", "note": "snítka" }
+      ]
+    }
+  ],
+  "steps": [
+    "Z líček odřízněte velké tuhé šlachy, menší ponechte. Maso osolte a opepřete. V hluboké pánvi nebo hrnci vhodném do trouby rozehřejte olej s částí másla, líčka ze všech stran opečte a vyjměte.",
+    "Mrkev, celer, petržel, cibuli a česnek nakrájejte na malé kostičky; malou část kořenové zeleniny si nechte na závěrečné podávání. Ve výpeku zvolna opečte kořenovou zeleninu, potom přidejte cibuli a česnek. Vmíchejte protlak, krátce jej orestujte, přilijte víno, vraťte maso a nechte víno vyvařit.",
+    "Troubu rozehřejte na 140 °C. Bobkový list, nové koření, celý pepř a tymián zabalte do plátýnka. Přidejte jej k masu, zalijte vývarem, přiklopte a vložte do trouby. Duste asi 1,5–2 hodiny, až budou líčka zcela měkká.",
+    "Z malé části másla a mouky připravte světlou jíšku, vmíchejte ji do omáčky a ještě asi 15 minut duste. Maso vyjměte, koření odstraňte a omáčku přeceďte; podle potřeby ji zredukujte. Dochuťte a zašlehejte do ní studené máslo, pak vraťte maso.",
+    "Odloženou zeleninu krátce blanšírujte, žampiony nakrájejte na čtvrtiny a obojí opečte na zbývajícím másle. Líčka podávejte s omáčkou, zeleninou, žampiony, nasekanou petrželí a bramborovou kaší."
+  ],
+  "sources": [
+    {
+      "url": "https://fresh.iprima.cz/zlata-klasika-pomalu-dusena-hovezi-licka-na-vine-podle-zdenka-pohlreicha-434587",
+      "author": "Zdeněk Pohlreich · Zlatá klasika · Prima Fresh",
+      "importedAt": "2026-10-11"
+    }
+  ],
+  "provenance": { "kind": "facts" }
+}
